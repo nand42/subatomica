@@ -1,0 +1,37 @@
+%% commento iniziale
+%% anche su più righe ma vicine
+
+
+% ogni file = un capitolo 
+
+\section{Convenzioni LaTex} %inizia il capitolo con "section"
+Iniziare a scrivere subito sotto al comando section per dare un senso estetico al codice.
+Andare a capo ad ogni "punto", ogni frase inizia una nuova riga di codice.
+Lasciando uno spazio bianco (due volte "invio") si ottiene un nuovo inizio paragrafo.
+
+Tipo questo, che non sempre è bello da vedere mentre altre volte è molto utile.
+Il concetto è: scrivere il codice il più attaccato possibile ma con maggior leggibilità possibile.
+
+Le equazioni si possono scrivere in vari modi, ma i migliori, per compatibilità tra versioni sono:
+\begin{enumerate}
+\item equazione nel testo tipo $\cos \alpha = \frac{\pi}{2 \pi}$
+
+\item equazione a capo a centro pagina e su una riga, senza numero di equazione
+$$ \frac{d\sigma}{d\Omega}=\frac{b(\theta)}{\sin\theta}\frac{db}{d\theta} $$
+
+\item equazione a capo a centro pagina e su una riga, con numero di equazione 
+\begin{equation}
+\Delta p_x \Delta x \ge \frac{\hbar}{2}
+\end{equation}
+
+\item equazione a capo a centro pagina su più righe, con numero di equazione
+\begin{equation}
+\begin{split}
+\mbox{\underline{Maxwell-Boltzmann}}  \quad\quad  \frac{n_s}{g_s} & = \frac{1}{e^{\alpha + \beta E_s}} \\
+\mbox{\underline{Bose-Einstein}}  \quad\quad  \frac{n_s}{g_s} & = \frac{1}{e^{\alpha + \beta E_s} - 1} \\
+\mbox{\underline{Fermi-Dirac}}  \quad\quad  \frac{n_s}{g_s} & = \frac{1}{e^{\alpha + \beta E_s} + 1 } 
+\end{split}
+\end{equation}
+
+\end{enumerate}
+
