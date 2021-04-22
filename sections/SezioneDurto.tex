@@ -7,7 +7,7 @@ $$^{A}_{Z} X$$
 in un atomo neutro il numero atomico corrisponde anche al numero di \emph{elettroni}.
 
 
-%%Nuova subsection
+%%Nuova subsection---------------------------------------------
 \subsection{Esperimento di Rutherford}
 Quando Rutherford iniziò i suoi studi l'idea di nucleo era quella di una sfera di carica positiva con all'interno degli elettroni negativi (modello a panettone).
 Si sapeva sapeva inoltre che i nuclei emettono particelle ed erano conosciute le emissioni $\alpha,\gamma ,\beta$.
@@ -125,7 +125,7 @@ Commenti alla sezione d'urto:
 \end{itemize}
 
 
-%%Nuova subsection
+%%Nuova subsection---------------------------------------------
 \subsection{Sezione d'Urto Quantistica (Regola d'Oro di Fermi)}
 In meccanica quantistica quello che si introduce è che la probabilità d'interazione viene espressa dalla regola d'oro di Fermi
 \begin{equation}
@@ -195,13 +195,86 @@ Questo accade perché oltre un certo raggio subentra l'interazione per forza for
 La sovrastima di Rutherford era dovuta al fatto che le particelle da lui usate avevano effettivamente interazione puramente coulombiana.
 
 
-%%Nuova subsection
+%%Nuova subsection---------------------------------------------
 \subsection{Derivazione con l'Elettrodinamica Quantistica}
 Questa trattazione è possibile in modo semplice grazie ai diagrammi di Feynman che semplificano il tecnicismo della fisica teorica rendendola accessibile ai fisici sperimentali.
 \begin{figure}[h]
 \centering
 \includegraphics{}
 \caption{Diagrammmi di Feynman}
+\end{figure}
 Secondo i diagrammi di Feynman ogni particella reale è descritta da una linea continua. Una cosa da tenere sempre presente è la direzione in cui si svolge l'azione temporale, in questo caso si svolge verso l'alto ma è solamente una rappresentazione grafica di un'interazione.
 Nelle teorie quantistiche di capo l'interazione viene descritta tramite lo scambio di una particella.
-La grande novità che è stata introdotta da queste teorie è che l'interazione non sia descritta tramite un campo ma attraverso lo scambio di particelle virtuali 
+La grande novità che è stata introdotta da queste teorie è che l'interazione non sia descritta tramite un campo ma attraverso lo scambio di particelle virtuali.
+Come si ricava quindi la sezione d'urto?
+La particella alfa emette un fotone virtuale e questo viene descritto tramite una costante di accoppiamento posta ai vertici (ovvero nel punto d'impatto) denominata $\sqrt{\alpha}$. 
+L'interazione viene rapresentata da quello che si chiama propagatore ovvero la linea interna che congiunge i due vertici.
+\[
+  \propto \frac{1}{Q^2+M^2C^2}
+\]
+dove $Q^2$ è il momento trasferito, $M$ è la massa della particella mediatrice (bosone vettore), $\gamma$ è il fotone.
+Come si calcola l'ampiezza della transizione?
+\begin{equation}
+  |M_{f,i}|&=\sqrt{\alpha}\frac{1}{Q^2}\sqrt{\alpha}=\frac{\alpha}{Q^2}\\
+  P\propto |M_{f,i}|^2&=\frac{\alpha^2}{Q^4}
+\end{equation}
+Dove P è la probabilità di transizione della particella, corrispondente alla sezione d'urto.
+
+
+%%Nuova subsection----------------------------------------------
+\subsection{Concetto di Sezione D'urto}
+Supponiamo di avere un fascetto di particelle che interagisce con un bersaglio di spessore $d$, l'area d'interazione è $A$.
+QUal è il numero di interazioni al secondo?
+\begin{equation}
+  dN&\propto I=\frac{N_i}{A}t\\
+  &\propto \rho A d
+\end{equation}
+Si ottiene che 
+\[
+  dN=\frac{KN_i}{A}t\cdot\rho Ad\cdot d\Omega
+\]
+\begin{equation}
+  dN=KN_tN_ad\Omega
+\end{equation}
+$dN [1/s]$ è il numero di particelle al secondo, $N_t=N_i\cdot t [1/s]$ è il numero di particelle incidenti per unità di tempo, $N_a=\rho \cdot d[n^o/m^2]$ è il numero di particelle bersaglio che il fascio colpisce nel cammino.
+Da un analisi dimesionale si può vedere che $K$ deve necessariamente avere le dimensioni di un'area, questa costante è ciò che chiamiamo sezzione d'urto.
+La \emph{sezione d'urto} si definisce quindi come la probabilità che un nucleo del bersaglio interagisca quando il fascio incidente è di una particella per unità di area.
+
+Solitamente si fa l'ipotesi di bersaglio sottile, questo perchè vuol dire che la particella non subisce più di una collisione, in modo da poter applicare queste formule in modo diretto.
+Supponiamo di considerare un bersaglio sottile soggetto ad un flusso di particelle $F$.
+\[
+  F=\biggl[\frac{n^o}{m^2 s}\biggl]
+\]
+\begin{equation}
+  dP & =\delta n_b dz\\
+  dF & =-FdP=-F\delta n_b dz\\
+  \frac{dF}{dz} & =-F\delta n=-\frac{F}{l}
+\end{equation}
+Dove $l=1/n\delta$ è il libero cammino medio ossia il percorso medio di ogni particella senza che vi siano interazioni.
+Il flusso invece viene descritto come
+\[
+F(z)=F(0)e^{-z/l}
+\]
+
+L'unità di misura delle sezioni d'urto è il barn. 
+Questa unità nasce da delle considerazioni fatte nei primi esperimenti di radioattività.
+Dalle considerazioni sui raggi atomici 
+\begin{equation}
+R=R_0A^{\frac{1}{3}} \hspace{0.5cm} R_0=1,2fm
+\end{equation}
+Ora, prendendo in considerazione l'uranio $^{239}_{92}U$, in particolare l'isotopo 235, si ottiene un raggio pari a 
+\[
+R[^{235}U]=1,2\cdot (235)^{1/3}=7,4fm
+\]
+Che resitituisce un'area d'interazione circa
+\[
+\pi R^2(^{235}U)=3\times54\sim 150fm^2
+\]
+La misura del barn scelta fu quindi di
+\begin{equation}
+1barn=100fm^2=100\times 10^{-30}m^2=10^{-28}m^2
+\end{equation}
+Le sezioni d'urto variano ovviamente da particella a particella e, mentre per le particelle subatomiche sono relativamente simili, ne esistono di altri tipi con variazioni molto incidenti.
+Le sezioni d'urto di collisine del neutrino sono estremamente basse e corrispondono a $10^{-19}mb$ (millibarn).
+Questo corrisponde a particelle molto elusive che non interagiscono praticamente mai (la loro teorizzazione è legata al decadimento $\beta$).
+Un'altro esempio è rappresentato dalla materia oscura che è stata rivelata solamente tramite considerazioni gravitazionali ma al giorno d'oggi non vi è ancora nessuna evidenza sperimentale di interazione con la materia in laboratorio.
