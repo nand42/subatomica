@@ -7,7 +7,7 @@ $$^{A}_{Z} X$$
 in un atomo neutro il numero atomico corrisponde anche al numero di \emph{elettroni}.
 
 
-%%Nuova subsection
+%%Nuova subsection---------------------------------------------
 \subsection{Esperimento di Rutherford}
 Quando Rutherford iniziò i suoi studi l'idea di nucleo era quella di una sfera di carica positiva con all'interno degli elettroni negativi (modello a panettone).
 Si sapeva sapeva inoltre che i nuclei emettono particelle ed erano conosciute le emissioni $\alpha,\gamma ,\beta$.
@@ -52,7 +52,9 @@ Sfruttando nuovamente il momento angolare si cerca ora di ottenere il differenzi
 \end{equation}
 dove $v_\perp=\omega r$ e $\omega=d\varphi/dt$. 
 Si ottinene quindi
-\[\frac{d\varphi}{dt}=\frac{vb}{r^2}\hspace{0.2cm}\to\hspace{0.2cm} dt=d\varphi \frac{r^2}{vb}\]
+\begin{equation}
+\frac{d\varphi}{dt}=\frac{vb}{r^2}\hspace{0.2cm}\to\hspace{0.2cm} dt=d\varphi \frac{r^2}{vb}
+\end{equation}
 Si passa ora ad introdurre l'interazione elettromagnetica. 
 Verrà qui sfruttato il teorema dell'impulso
 \begin{equation}
@@ -60,14 +62,18 @@ Verrà qui sfruttato il teorema dell'impulso
 \end{equation}
 dove F è la forza coulombiana
 \begin{equation}
-F=\frac{1}{4\pi\varepsilon_0}\frac{zZe^2}{r^2}
-\end{equation}
-\begin{equation}
+\begin{split}
+F=\frac{1}{4\pi\varepsilon_0}\frac{zZe^2}{r^2}\\
 \Delta p=\int_{-\infty}^{+\infty} \frac{1}{4\pi\varepsilon_0}\frac{zZe^2}{r^2}\cos\varphi dt
+\end{split}
 \end{equation}
 Possiamo quindi sostituire la formula per $dt$ trovata sopra all'interno dell'integrale appena ricavato prestando ovviamente attenzione agli estremi d'integrazione 
-\[t\to -\infty\hspace{2cm}\varphi\to-\frac{1}{2}(\pi-\theta)\]
-\[t\to +\infty\hspace{2cm}\varphi\to+\frac{1}{2}(\pi-\theta)\]
+\begin{equation}
+\begin{split}
+t\to -\infty\hspace{2cm}\varphi\to-\frac{1}{2}(\pi-\theta)\\
+t\to +\infty\hspace{2cm}\varphi\to+\frac{1}{2}(\pi-\theta)
+\end{split}
+\end{equation}
 \begin{equation}
 \Delta p=\int _{-\frac{1}{2}(\pi-\theta)}^{+\frac{1}{2}(\pi-\theta)}\frac{1}{4\pi\varepsilon_0}\frac{zZe^2}{vb}\cos\varphi d\varphi
 \end{equation}
@@ -76,7 +82,7 @@ Rinominando tutte le costanti dell'integrale come A si ottiene
 \Delta p=A[\sin\varphi] _{-\frac{1}{2}(\pi-\theta)}^{+\frac{1}{2}(\pi-\theta)}=A\biggl[\sin\left(\frac{\pi}{2}-\frac{\theta}{2}\right)-\sin\left(\frac{\pi}{2}+\frac{\theta}{2}\right)\biggl]=2A\cos\frac{\theta}{2}
 \end{equation}
 A questo punto è necessario ricavare la variazione della quantità di moto proiettata sulla normale
-\[p_f-p_i=2mv\sin\frac{\theta}{2}\]
+\begin{equation}p_f-p_i=2mv\sin\frac{\theta}{2}\end{equation}
 abbiamo ottenuto così che
 \begin{equation}
 \begin{split}
@@ -96,12 +102,16 @@ Si procede ora a ricavare la sezione d'urto differenziale, ovvero la proporzione
 L'area delle particelle incidenti è data dalla formula $d\sigma=2\pi b |db|$. 
 Le particelle definite in quest'area saranno diffuse all'angolo $d\Omega =2\pi \sin\theta d\theta$. 
 Facendo il rapporto tra le due aree si ottiene la sezione d'urto differenziale dal punto di vista cinematico
-\[\frac{d\sigma}{d\Omega}=\frac{b(\theta)}{\sin\theta}\frac{db}{d\theta}\]
+\begin{equation}
+\frac{d\sigma}{d\Omega}=\frac{b(\theta)}{\sin\theta}\frac{db}{d\theta}
+\end{equation}
 
 Si può a questo punto unire le formule ricavando b rispetto a $\theta$ 
-\[\frac{db}{d\theta}=\frac{d}{d\theta}\biggl|\frac{k}{\tan\frac{\theta}{2}}\biggl|=\frac{K}{\tan^2 \frac{\theta}{2}}\frac{1}{2}\frac{1}{\cos^2\frac{\theta}{2}}\]
 \begin{equation}
-\begin{spit}
+\frac{db}{d\theta}=\frac{d}{d\theta}\biggl|\frac{k}{\tan\frac{\theta}{2}}\biggl|=\frac{K}{\tan^2 \frac{\theta}{2}}\frac{1}{2}\frac{1}{\cos^2\frac{\theta}{2}}
+\end{equation}
+\begin{equation}
+\begin{split}
 \frac{d\sigma}{d\Omega}&=\frac{1}{2}\frac{K^2}{\tan^3 \frac{\theta}{2}}\frac{1}{\cos^2\frac{\theta}{2}\sin^2\frac{\theta}{2}}=\frac{K^2}{4\sin^4\frac{\theta}{2}}\\
 &=\frac{1}{16}\left(\frac{zZe^2}{4\pi\varepsilon_0 T}\right)\frac{1}{\sin^4\frac{\theta}{2}}
 \end{split}
@@ -125,7 +135,7 @@ Commenti alla sezione d'urto:
 \end{itemize}
 
 
-%%Nuova subsection
+%%Nuova subsection---------------------------------------------
 \subsection{Sezione d'Urto Quantistica (Regola d'Oro di Fermi)}
 In meccanica quantistica quello che si introduce è che la probabilità d'interazione viene espressa dalla regola d'oro di Fermi
 \begin{equation}
@@ -158,50 +168,157 @@ Tornando alla regola d'oro di fermi, ciò mi dice che la probabilità d'interazi
 
 Studiamo quindi la variabilità della probabilità in base alle funzioni d'onda. 
 Si ha
-\[H_{f,i}\simeq \int e^{-ik'r} V(r)e^{+ikr}=\int V(r)e^{-i(k'-k)r}\]
-\[\bar p=\hbar \bar k \hspace{0.5cm} \bar p=\hbar k' \]
-\[\bar p' -\bar p =\Delta p=\bar q=\hbar (k'-k)\]
-\[H_{f,i}=\int V(r) e^{-i\frac{\bar q}{\hbar}r}d^3r=\frac{zZe^2}{4\pi\varepsilon_0}\int \frac{1}{r}e^{-i\frac{\bar q}{\hbar}r}\]
+\begin{equation}
+H_{f,i}\simeq \int e^{-ik'r} V(r)e^{+ikr}=\int V(r)e^{-i(k'-k)r}
+\end{equation}
+\begin{equation}
+\begin{split}
+\bar p &=\hbar \bar k\\
+\bar p &=\hbar k'\\ 
+\Delta p &=\bar p' -\bar p=\bar q=\hbar (k'-k)\\
+H_{f,i}&=\int V(r) e^{-i\frac{\bar q}{\hbar}r}d^3r\\
+&=\frac{zZe^2}{4\pi\varepsilon_0}\int \frac{1}{r}e^{-i\frac{\bar q}{\hbar}r}
+\end{split}
+\end{equation}
 Come si può vedere questa formula corrisponde ad una trasformata di Fourier, ciò che si ottiene alla fine è
 \begin{equation}
 H_{f,i}=\frac{zZe^2}{4\pi\varepsilon_0}\frac{4\pi\hbar^2}{q^2}
 \end{equation}
 l'ultima frazione è la parte che si utilizza per calcolare la sezione d'urto differenziale
-\[\frac{d\sigma}{d\Omega}\propto P\simeq |H_{f,i}|^2\sim\frac{1}{q^4}\]
+\begin{equation}
+\frac{d\sigma}{d\Omega}\propto P\simeq |H_{f,i}|^2\sim\frac{1}{q^4}
+\end{equation}
 Si può vedere poi che questa funzione, ricavata quantisticamente esprime la stessa dipendenza ricavata tramite metodo classico.
+
 \begin{figure}[h]
 \centering
 \includegraphics[width=120pt]{fig1_03}
 \label{fig:1.3}
 \end{figure}
-\[\bar{\Delta p}=\bar p'-\bar p=q=2p \sin\frac{\theta}{2}, \hspace{0.5cm}T=\frac{1}{2}mv^2\]
-\[q^2=4m^2v^2\sin^2 \frac{\theta}{2}=8mT\sin^2\frac{\theta}{2}\]
+
+\begin{equation}
+\begin{split}
+\bar{\Delta p} &=\bar p'-\bar p=q=2p \sin\frac{\theta}{2}\\
+T &=\frac{1}{2}mv^2\\
+q^2 &=4m^2v^2\sin^2 \frac{\theta}{2}=8mT\sin^2\frac{\theta}{2}
+\end{split}
+\end{equation}
 
 Nella trattazione classica abbiamo supposto che le particelle non avessero interazioni di spin, abbiamo trascurato inoltre che i nuclei avessero rinculo. 
 Queste sono due assunzioni buone ma che per risultati più precisi vanno considerate.
 Si consideri ora il raggio nucleare stimato de Rutherford per la sua trattazione tramite scattering $\alpha$. 
 Si cerchi la distanza di massimo avvicinamento della particella a nucleo, questa si avrà per un'energia pari a 
-\[V=K_\alpha \hspace{0.5cm}K=\frac{1}{4\pi\varepsilon_0}\frac{zZe^2}{R_0}\]
 \begin{equation}
-R_0=\frac{1}{4\pi\varepsilon_0}\frac{zZe^2}{K_\alpha}\frac{\hbar c}{\hbar c}\simeq\frac{1}{137}\frac{2\cdot 79}{4\cdot 9 MeV}\hbar c =46 fm\]
+V=K_\alpha \hspace{0.5cm}\to \hspace{0.5cm}K_{\alpha}=\frac{1}{4\pi\varepsilon_0}\frac{zZe^2}{R_0}
 \end{equation}
+\begin{equation}
+\begin{split}
+R_0 &=\frac{1}{4\pi\varepsilon_0}\frac{zZe^2}{K_{\alpha}}\frac{\hbar c}{\hbar c}\\
+&\simeq\frac{1}{137}\frac{2\cdot 79}{4\cdot 9 MeV}\hbar c\\
+&=46 fm
+\end{split}
+\end{equation}
+
 Questa è una sovrastima del raggio nucleare in quanto si sa attualmente che il raggio corrisponde ad 8 fermi. 
 Questo errore è dovuto al fatto che non vi è interazione nucleare nello scattering di Rutherford ma semplicemente elettrostatica, il che spiega anche la perfetta corrispondenza dei suoi dati con la trattazione teorica. 
 Supponiamo quindi di riuscire ad aumentare l'energia delle particelle $\alpha$ (quello che accade negli acceleratori). 
 Si supponga poi di utilizzare come target del piombo e di porre un rivelatore a $60^o$. 
 Si può osservare che l'andamento del numero di particelle scatterate per energie inferiori a 27,5 MeV rispecchia esattamente l'andamento di Rutherford ma poi ha un cambio drastico. 
 Questo accade perché oltre un certo raggio subentra l'interazione per forza forte
-\[R=\frac{Q_1Q_2}{4\pi\varepsilon_0KE}=8.59 fm\]
+\begin{equation}
+R=\frac{Q_1Q_2}{4\pi\varepsilon_0KE}=8.59 fm
+\end{equation}
 La sovrastima di Rutherford era dovuta al fatto che le particelle da lui usate avevano effettivamente interazione puramente coulombiana.
 
 
-%%Nuova subsection
+%%Nuova subsection---------------------------------------------
 \subsection{Derivazione con l'Elettrodinamica Quantistica}
 Questa trattazione è possibile in modo semplice grazie ai diagrammi di Feynman che semplificano il tecnicismo della fisica teorica rendendola accessibile ai fisici sperimentali.
 \begin{figure}[h]
 \centering
-\includegraphics{}
+\includegraphics[width=300
+pt]{fig1_04}
 \caption{Diagrammmi di Feynman}
+\end{figure}
 Secondo i diagrammi di Feynman ogni particella reale è descritta da una linea continua. Una cosa da tenere sempre presente è la direzione in cui si svolge l'azione temporale, in questo caso si svolge verso l'alto ma è solamente una rappresentazione grafica di un'interazione.
 Nelle teorie quantistiche di capo l'interazione viene descritta tramite lo scambio di una particella.
-La grande novità che è stata introdotta da queste teorie è che l'interazione non sia descritta tramite un campo ma attraverso lo scambio di particelle virtuali 
+La grande novità che è stata introdotta da queste teorie è che l'interazione non sia descritta tramite un campo ma attraverso lo scambio di particelle virtuali.
+
+Come si ricava quindi la sezione d'urto?\\
+La particella alfa emette un fotone virtuale e questo viene descritto tramite una costante di accoppiamento posta ai vertici (ovvero nel punto d'impatto) denominata $\sqrt{\alpha}$. 
+L'interazione viene rapresentata da quello che si chiama propagatore ovvero la linea interna che congiunge i due vertici.
+\begin{equation}
+\propto \frac{1}{Q^2+M^2C^2}
+\end{equation}
+dove $Q^2$ è il momento trasferito, $M$ è la massa della particella mediatrice (bosone vettore), $\gamma$ è il fotone.
+Come si calcola l'ampiezza della transizione?
+\begin{equation}
+\begin{split}
+|M_{f,i}| &=\sqrt{\alpha}\frac{1}{Q^2}\sqrt{\alpha}=\frac{\alpha}{Q^2}\\
+P &\propto |M_{f,i}|^2 =\frac{\alpha^2}{Q^4}
+\end{split}
+\end{equation}
+Dove P è la probabilità di transizione della particella, corrispondente alla sezione d'urto.
+
+
+%%Nuova subsection----------------------------------------------
+\subsection{Concetto di Sezione D'urto}
+Supponiamo di avere un fascetto di particelle che interagisce con un bersaglio di spessore $d$, l'area d'interazione è $A$.
+QUal è il numero di interazioni al secondo?
+\begin{equation}
+\begin{split}
+dN &\propto I=\frac{N_i}{A}t\\
+&\propto \rho A d
+\end{split}
+\end{equation}
+Si ottiene che 
+\begin{equation}
+\begin{split}
+dN &=\frac{KN_i}{A}t\cdot\rho Ad\cdot d\Omega\\
+dN &=KN_tN_ad\Omega
+\end{split}
+\end{equation}
+$dN [1/s]$ è il numero di particelle al secondo, $N_t=N_i\cdot t [1/s]$ è il numero di particelle incidenti per unità di tempo, $N_a=\rho \cdot d[n^o/m^2]$ è il numero di particelle bersaglio che il fascio colpisce nel cammino.
+Da un analisi dimesionale si può vedere che $K$ deve necessariamente avere le dimensioni di un'area, questa costante è ciò che chiamiamo sezzione d'urto.
+La \emph{sezione d'urto} si definisce quindi come la probabilità che un nucleo del bersaglio interagisca quando il fascio incidente è di una particella per unità di area.
+
+Solitamente si fa l'ipotesi di bersaglio sottile, questo perchè vuol dire che la particella non subisce più di una collisione, in modo da poter applicare queste formule in modo diretto.
+Supponiamo di considerare un bersaglio sottile soggetto ad un flusso di particelle $F$.
+\begin{equation}
+F=\biggl[\frac{number}{m^2 s}\biggl]
+\end{equation}
+\begin{equation}
+\begin{split}
+dP&=\delta n_b dz\\
+dF&=-FdP=-F\delta n_b dz\\
+\frac{dF}{dz}&=-F\delta n=-\frac{F}{l}
+\end{split}
+\end{equation}
+Dove $l=1/n\delta$ è il libero cammino medio ossia il percorso medio di ogni particella senza che vi siano interazioni.
+Il flusso invece viene descritto come
+\begin{equation}
+F(z)=F(0)e^{-z/l}
+\end{equation}
+
+L'unità di misura delle sezioni d'urto è il barn. 
+Questa unità nasce da delle considerazioni fatte nei primi esperimenti di radioattività.
+Dalle considerazioni sui raggi atomici 
+\begin{equation}
+R=R_0A^{\frac{1}{3}}\hspace{0.5cm} R_0=1,2fm
+\end{equation}
+Ora, prendendo in considerazione l'uranio $^{239}_{92}U$, in particolare l'isotopo 235, si ottiene un raggio pari a 
+\begin{equation}
+R[^{235}U]=1,2\cdot (235)^{1/3}=7,4fm
+\end{equation}
+Che resitituisce un'area d'interazione circa
+\begin{equation}
+\pi R^2(^{235}U)=3\times54\sim 150fm^2
+\end{equation}
+La misura del barn scelta fu quindi di
+\begin{equation}
+1barn=100fm^2=100\times 10^{-30}m^2=10^{-28}m^2
+\end{equation}
+Le sezioni d'urto variano ovviamente da particella a particella e, mentre per le particelle subatomiche sono relativamente simili, ne esistono di altri tipi con variazioni molto incidenti.
+Le sezioni d'urto di collisine del neutrino sono estremamente basse e corrispondono a $10^{-19}mb$ (millibarn).
+Questo corrisponde a particelle molto elusive che non interagiscono praticamente mai (la loro teorizzazione è legata al decadimento $\beta$).
+Un'altro esempio è rappresentato dalla materia oscura che è stata rivelata solamente tramite considerazioni gravitazionali ma al giorno d'oggi non vi è ancora nessuna evidenza sperimentale di interazione con la materia in laboratorio.
