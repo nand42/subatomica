@@ -67,15 +67,77 @@ H \psi & = E \psi \\
 - \frac{\hbar^2}{2m} \frac{d^2}{dr^2} \psi + V \psi & = E \psi
 \end{split}
 \end{equation}
-Il potenziale in questo esempio si scrive come
+Il potenziale di questa buca è
 \begin{equation}
 V = 
 \Bigg\{\begin{array}{l}
-V_0 \quad\mbox{dentro la buca : zona \Romannum{1}} \\
-0 \quad\quad\mbox{altrove : zona \Romannum{2}}
+V_0 \quad\mbox{zona \Romannum{1}: dentro la buca} \\
+0 \quad\mbox{ zona \Romannum{2}: altrove}
 \end{array}
 \end{equation}
-
+Scrivo l'equazione di Schrodinger nella zona \Romannum{1}, in cui ho $V = V_0$
+\begin{equation}
+\begin{split}
+\frac{d^2 \psi}{d r^2} & = -\frac{2m}{\hbar^2} (E - V_0) \psi \\
+K^2 &= \frac{2m}{\hbar^2} (E - V_0) \\
+\frac{d^2 \psi}{d r^2} & = - K^2 \psi \\
+\end{split}
+\end{equation}
+la soluzione generale è
+\begin{equation}
+\psi(r) = A \sin Kr + B \cos Kr
+\end{equation}
+calcolo $A$ e $B$ imponendo le condizioni al contorno:
+\begin{equation}
+\psi (0) = 0 \quad\Rightarrow\quad \psi(0) = A \sin 0 + B \cos 0 = 0 \quad\Rightarrow\quad B=0
+\end{equation}
+per cui diventa
+\begin{equation}
+\psi = A \sin K r
+\label{psi_1}
+\end{equation}
+Scrivo l'equazione di Schrodinger nella zona \Romannum{2}, in cui ho $V =0$
+\begin{equation}
+\begin{split}
+\frac{d^2 \psi}{d r^2} & = -\frac{2m}{\hbar^2} E \psi \\
+L^2 &= - \frac{2m}{\hbar^2} E \\
+\frac{d^2 \psi}{d r^2} & = L^2 \psi \\
+\end{split}
+\end{equation}
+la soluzione generale è
+\begin{equation}
+\psi(r) = C e^{L r} + D e^{- L r}
+\end{equation}
+di cui so che deve appartenere allo spazio di Hilbert, per cui la parte $e^{L r}$ non è soluzione in quanto non verifica la condizione $|\psi|^2 < \infty$, per cui diventa
+\begin{equation}
+\psi(r) = D e^{- L r} 
+\label{psi_2}
+\end{equation}
+Eguagliando le funzioni d'onda \ref{psi_1} e \ref{psi_2} e le loro derivate in corrispondenza della frontiera $r = R$ trovo
+\begin{equation}
+\Bigg\{\begin{array}{l}
+A \sin K R = D e^{ - L R }\\
+K A \sin K R = -L D e^{ - L R }
+\end{array}
+\end{equation}
+dividendo una con l'altra le equazioni del sistema trovo la relazione seguente in funzione dei parametri $K$ ed $L$
+\begin{equation}
+\begin{split}
+K & = \sqrt{\frac{2m}{\hbar^2} (E - V_0)} \in \mathbb{R} \\
+L & = \sqrt{- \frac{2m}{\hbar^2} E} \in \mathbb{R}
+\end{split}
+\end{equation}
+che quindi diventa
+\begin{equation}
+\begin{split}
+& K \cot K R = - L \\
+& \sqrt{\frac{2m}{\hbar^2} (E - V_0)} \cot \Bigl[ R \sqrt{\frac{2m}{\hbar^2} (E - V_0)} \Bigr] = - \sqrt{- \frac{2m}{\hbar^2} E}
+\end{split}
+\end{equation}
+da cui, inserendo i dati sperimentali, trovo il valore della buca di potenziale
+\begin{equation}
+V_0 = \SI{-36}{MeV}
+\end{equation}
 
 
 
