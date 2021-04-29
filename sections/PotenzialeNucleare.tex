@@ -78,12 +78,12 @@ V_0 \quad\mbox{zona \Romannum{1}: dentro la buca} \\
 Scrivo l'equazione di Schrodinger nella zona \Romannum{1}, in cui ho $V = V_0$
 \begin{equation}
 \begin{split}
+- \frac{\hbar^2}{2m} \frac{d^2 \psi}{d r^2} + V_0 \psi & = E \psi \\
 \frac{d^2 \psi}{d r^2} & = -\frac{2m}{\hbar^2} (E - V_0) \psi \\
-K^2 &= \frac{2m}{\hbar^2} (E - V_0) \\
-\frac{d^2 \psi}{d r^2} & = - K^2 \psi \\
+\frac{d^2 \psi}{d r^2} & = - K^2 \psi \quad\quad \mbox{con } K^2 = \frac{2m}{\hbar^2} (E - V_0)
 \end{split}
 \end{equation}
-la soluzione generale è
+la soluzione ha un andamento oscillatorio ed in generale è
 \begin{equation}
 \psi(r) = A \sin Kr + B \cos Kr
 \end{equation}
@@ -100,11 +100,10 @@ Scrivo l'equazione di Schrodinger nella zona \Romannum{2}, in cui ho $V =0$
 \begin{equation}
 \begin{split}
 \frac{d^2 \psi}{d r^2} & = -\frac{2m}{\hbar^2} E \psi \\
-L^2 &= - \frac{2m}{\hbar^2} E \\
-\frac{d^2 \psi}{d r^2} & = L^2 \psi \\
+\frac{d^2 \psi}{d r^2} & = L^2 \psi \quad\quad \mbox{con } L^2 = - \frac{2m}{\hbar^2} E
 \end{split}
 \end{equation}
-la soluzione generale è
+la soluzione ha un andamento esponenziale ed in generale è
 \begin{equation}
 \psi(r) = C e^{L r} + D e^{- L r}
 \end{equation}
@@ -115,6 +114,11 @@ di cui so che deve appartenere allo spazio di Hilbert, per cui la parte $e^{L r}
 \end{equation}
 Eguagliando le funzioni d'onda \ref{psi_1} e \ref{psi_2} e le loro derivate in corrispondenza della frontiera $r = R$ trovo
 \begin{equation}
+\Bigg\{\begin{array}{l}
+\psi_{\Romannum{1}}(R) = \psi_{\Romannum{2}}(R)\\
+\psi_{\Romannum{1}}'(R) = \psi_{\Romannum{2}}'(R)
+\end{array}
+\quad\Rightarrow\quad 
 \Bigg\{\begin{array}{l}
 A \sin K R = D e^{ - L R }\\
 K A \sin K R = -L D e^{ - L R }
@@ -134,11 +138,27 @@ che quindi diventa
 & \sqrt{\frac{2m}{\hbar^2} (E - V_0)} \cot \Bigl[ R \sqrt{\frac{2m}{\hbar^2} (E - V_0)} \Bigr] = - \sqrt{- \frac{2m}{\hbar^2} E}
 \end{split}
 \end{equation}
-da cui, inserendo i dati sperimentali, trovo il valore della buca di potenziale
+da cui, inserendo i dati sperimentali, 
+\begin{equation}
+\begin{split}
+E & = \SI{-2.225}{MeV} \\
+R & = \SI{2.1}{fm}
+\end{split}
+\end{equation}
+e la massa corrisponde alla massa ridotta tra il protone ed il neutrone
+\begin{equation}
+m = \frac{m_n m_p}{m_n + m_p} \simeq \frac{m_p^2}{2 m_p} = \frac{m_p}{2}
+\end{equation}
+trovo il valore della buca di potenziale
 \begin{equation}
 V_0 = \SI{-36}{MeV}
 \end{equation}
+(non è ben noto come sia davvero possibile risolvere l'equazione del tipo $x \cot a x = b$ ma ok, prendiamo atto del risultato precedente e andiamo avanti).
 
+Risulta quindi che la buca di potenziale del Deutone è profonda $\SI{-36}{MeV}$ di cui solo $\SI{-2.225}{MeV}$ sono di energia potenziale, \emph{di legame}, mentre circa $\SI{-34}{MeV}$ sono di energia cinetica.
+
+Per il ferro $^{56}_{26}Fe$ ad esempio si ha un'energia di legame media di circa $\SI{8}{MeV / nucleone}$, mentre
+per il deutone $^{2}_{1}He$ si ha circa $\SI{1.1}{MeV / nucleone}$.
 
 
 
