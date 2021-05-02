@@ -1,0 +1,39 @@
+\section{Applicazioni}
+\subsection{Risonanza Magnetica Nucleare}
+La risonanza magnetica è una tecnica di imaging medico non invasiva.
+Si basa sul fatto che ad ogni protone è associato un piccolo campo magnetico associato al dipolo. 
+Ponendo questi dipoli sotto l'azione di un campo magnetico forte, si avrà l'allineamento con il campo, sia nella stessa direzione che i direzione opposta.
+\begin{equation}
+E=-\bar \mu\cdot \bar B
+\end{equation}
+Ciò che si otterrà è che l'energia sarà minore se il campo e il dipolo sono solidali ($\mu\uparrow\  B\uparrow$), mentre sarà maggiore nel caso contrario ($\mu\uparrow\  B\downarrow$).
+\begin{figure}
+
+\end{figure}
+La differenza di energia è pari a $\Delta E=\mu B$.
+La risonanza in campo magnetico sfrutta esclusivamente nucleoni ma in altri ambiti possono essere usati anche gli elettroni e dalla formula sopra si può vedere come sia diversa nei due casi.
+
+I valori del magnetone di Bohr e del magnetone nucleare sono 
+\begin{equation}
+\begin{split}
+\mu_B=\frac{e\hbar}{2m_e}=9,3\times10^{-24}\frac{j}{T}=5,8\times10^{-5}\frac{eV}{T}\\
+\mu_N=\frac{e\hbar}{2m_p}=5,0\times10^{-27}\frac{j}{T}=3,8\times10^{-8}\frac{eV}{T}
+\end{split}
+\end{equation}
+
+La risonanza magnetica funziona che una volta applicato un campo magnetico i livelli energetici con spin up e down si dividono e fornendo una radiofrequenza con energia pari alla differenza di energia generata il mio campione assorbirà energia, e io sono sensibile all'energia assorbita. 
+
+Dato un elettrone se applico un campo B=0,335T, ottengo che la differenza di energia sarà pari a $\Delta E=6,22\times 10^{-24}j$.
+In questo caso la frequenza coinvolta (assorbita dall'elettrone) è pari a $\nu =9,4GHz$, ovvero nel campo delle microonde.
+
+Nel caso del protone, ovvero quello usato in campo medico, c'è la necessità di applicare un campo magnetico molto più alto per portare ad una separazione sufficientemente visibile. 
+Applicando un campo $B=2T$ ottengo $\Delta E=5,64\times10^{-26}j$, vi è quindi la necessità di una radiofrequenza dell'ordine di $\nu =\frac{\Delta E}{h}=85MHz$.
+
+Quello che succede è che pongo il paziente in questi campi magnetici e faccio passare una radiofrequenza. 
+L'assorbimento di questa radiofrequenza avviene in funzione della densità del materiale biologico.
+Una cosa di cui devo tener conto è l'agitazione termica dei protoni, posso immaginare che maggiore è l'agitazione termica minore sarà il contrasto dell'immagine, una soluzione sarebbe abbassare la temperatura ma non potendo congelare il paziente non resta che sfruttare campi magnetici molto forti($\Delta E/KT$).
+Il segnale che io rivelo è proporzionale alla densità di protoni, le zone più chiare sono quelle a più elevata densità di protoni.
+Per avere una risoluzione spaziale, ovvero una tridimensionalità, applico un gradiente di campo magnetico minimo che produrrà una risonanza diversa a diverse frequenze di radiofrequenza generando una variazione ulteriore che mi permette di ampliare l'imaging.
+Per andare ad aumentare il contrasto andrò a vedere la risposta temporale del campione.
+Quando irradio il tessuto i protoni assorbendo energia passeranno da uno stato all'altro (spin-flip), se poi io fermo la radiazione e lascio il tessuto tornare allo stato fondamentale potrò poi misurare il tempo impiegato per la diseccitazione e avrò quindi informazioni addizionali sul tessuto che circonda il materiale in analisi.
+
