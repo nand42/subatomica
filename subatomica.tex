@@ -24,7 +24,7 @@
     linktoc=all,     %set to all if you want both sections and subsections linked
     linkcolor=blue,  %choose some color if you want links to stand out
 }
-\usepackage{romannum}
+%\usepackage{romannum}
 							% Document
 \begin{document}
 
@@ -33,7 +33,7 @@ Laurea in Fisica - Università di Ferrara}
 
 \author{Scritto e impaginato in \LaTeX\ da \textbf{Dario Chinelli} e \textbf{Umberto Zarantonello} nel 2021}
 
-\date{aggiornato al 21 aprile 2021}
+\date{11 maggio 2021}
 
 \maketitle
 
@@ -45,7 +45,6 @@ Laurea in Fisica - Università di Ferrara}
 
 							% inizio capitoli
 
-
 \include{sections/SezioneDurto}
 
 \include{sections/Nucleo}
@@ -56,16 +55,6 @@ Laurea in Fisica - Università di Ferrara}
 
 \include{sections/Applicazioni}
 
-\include{sections/Esercizi}
-
-%\include{sections/NUOVOCAPITOLO}
-
-
-% --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---  --- --- --- --- 
-% --- --- --- --- --- --- --- --- divisione a metà del corso --- --- --- --- --- --- --- --- --- --- ---
-% --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---  --- --- --- --- 
-
-
 \include{sections/PotenzialeNucleare}
 
 %\include{sections/NUOVOCAPITOLO}
@@ -74,9 +63,12 @@ Laurea in Fisica - Università di Ferrara}
 
 %\include{sections/NUOVOCAPITOLO}
 
+%\include{sections/NUOVOCAPITOLO}
 
-\newpage
-\include{sections/convenzioni_latex}
+\include{sections/Esercizi}
+
+% ------------------------------------------------
+% \include{sections/convenzioni_latex}
 
 \end{document}
 
