@@ -190,7 +190,167 @@ e^{ - L r } & \rightarrow e^{ \frac{-L}{L}} = e^{ -1 } = 0.37
 \end{split}
 \end{equation}
 \end{itemize}
-La funzione d'onda ottenuta evidenzia come sia possible trovare la particella al di fuori della buca di potenziale, a distanze oltre i $\SI{5}{fm}$.
+La funzione d'onda si estende di fuori della buca di potenziale, a distanze oltre i $\SI{5}{fm}$, questo perché il deutone è uno stato poco legato.
+Nel caso della molecola di idrogeno l'atomo è molto ben localizzato all'interno della buca di potenziale.
+
+\subsection{Collisione neutrone protone}
+Studiamo ora il potenziale nucleare partendo dalla collisione tra protone e neutrone.
+\paragraph{La produzione di un fascio di neutroni} la collisione di un fascio di protoni contro un bersaglio si ottengono molteplici particelle, applicando un potenziale elettrico dopo il target si "selezionano" quelle cariche e quelle neutre, che continueranno inalterate nel loro moto, come i neutroni ed i pioni neutri o $\pi_0$.
+Con una buona definizione temporale posso anche discriminare i neutroni in base all'energia, i primi saranno i più energetici.
+
+Il potenziale di interazione tra un neutrone ed un target sarà del tipo visto nei paragrafi precedenti, quindi una buca di potenziale finita.
+I neutroni incidenti sono liberi, per cui avranno energia maggiore rispetto allo zero della buca di potenziale.
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.7]{/potenziale_neutroni_liberi}
+\caption{CAPTION}
+\end{figure}
+L'equazione che descrive il neutrone è
+\begin{equation}
+\begin{split}
+-\frac{\hbar^2}{2m} \frac{d^2 \psi}{dr^2} + V \psi & = E \psi \\
+\mbox{zona 1} \quad\quad  & \frac{d^2 \psi}{dr^2} = - \frac{2m}{\hbar^2} (E-V_0) \psi \\
+\mbox{zona 2} \quad\quad  & \frac{d^2 \psi}{dr^2} = - \frac{2m}{\hbar^2} \psi
+\end{split}
+\end{equation}
+noto ora che il termine $ k^2 = \frac{2m}{\hbar^2} (E-V_0)$ è positivo ed anche il termine $L^2 = \frac{2m}{\hbar^2}$ è positivo.
+In entrambe le zone si ha quindi un andamento oscillatorio della funzione d'onda
+\begin{equation}
+\begin{split}
+\mbox{zona 1} \quad\quad  & \psi = A \sin k r + B \cos k r = A \sin k r \\
+\mbox{zona 2} \quad\quad  & \psi = C \sin k r + D \cos k r = E \sin ( L r + \delta )
+\end{split}
+\end{equation}
+applicando le condizioni al bordo e di continuità trovo
+\begin{equation}
+\begin{split}
+& A \sin k r_0 = E \sin (L r_0 + \delta) \\
+& k A \cos k r_0 = L E \cos (L r_0 + \delta) \\
+\Rightarrow\quad & k \cot k r_0 = L \cot (L r_0 + \delta)
+\end{split}
+\end{equation}
+dove ricordando i valori di 
+\begin{equation}
+\begin{split}
+& k = \sqrt{\frac{2m}{\hbar^2}(E-V_0)} \\
+& L = \sqrt{\frac{2m}{\hbar^2}E} \\
+& r_0 = \SI{2.1}{fm}
+\end{split}
+\end{equation}
+vedo che il solo termine da ricavare rimane $\delta$.
+
+La sezione d'urto differenziale e totale sono
+\begin{equation}
+\begin{split}
+& \frac{d\sigma}{d\Omega} = \frac{1}{k^2} \sin \delta \\
+& \sigma_{tot} = \frac{4\pi}{k^2} \sin^2 \delta
+\end{split}
+\end{equation}
+da queste espressioni teoriche si ricava
+\begin{equation}
+\sigma_{teorico} = \SI{5}{barn} \quad\quad \SI{1}{barn} = \SI{e-28}{m^2}
+\end{equation}
+e dall'esperimento si ricava
+\begin{equation}
+\sigma_{sperimentale} = \SI{20}{barn}
+\end{equation}
+sussiste quindi una grossa discrepanza tra i due valori. 
+
+Il potenziale visto sopra è un potenziale attrattivo ed è quello che permette di avere uno stato legato con spin parallelo con $S=1$, stato di tripletto in cui compaiono tre contributi $1 \hbar, 0, -1 \hbar$, mentre $S=0$ si ha solo nel caso con spin antiparalleli.
+
+La sezione d'urto totale è data dalla seguente relazione, nella trattazione precedente abbiamo considerato solo il primo termine
+\begin{equation}
+\begin{split}
+\sigma_{tot} & = \frac{3}{4} (\delta_{S=1}) + \frac{1}{4} (\delta_{S=0}) \\
+20 & = 0.75 \cdot 5 + 0.25 \cdot \sigma_{S=0} \\
+\sigma_{S=0} & = \SI{65}{barn}
+\end{split}
+\end{equation}
+da cui abbiamo ricavato dal punto di vista sperimentale che l'interazione nucleare ha una forte dipendenza dallo spin relativo alle due particelle.
+Quindi non si può trascurare lo spin nella trattazione di questa interazione.
+
+\subsection{ultima parte}
+Mettendo su un grafico la $\delta$ in funzione dell'energia $E$, trovo due curve che rappresentano la dipendenza per $S = 1$ e per $S = 0$, si osserva che per una determinata energia entrambi gli andamenti cambiano di segno, tale energia è pari a $\SI{300}{MeV}$
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.7]{/fase_energia_potnucl}
+\caption{CAPTION}
+\label{delta_energ}
+\end{figure}
+\begin{equation}
+\delta_{tot} = \frac{4\pi}{k^2} \sin^2 \delta
+\end{equation}
+
+Studiando i parametri in funzione del potenziale $V_0$ osservo che, 
+\begin{equation}
+V_0 < 0 
+\quad\Rightarrow\quad 
+k > L \quad\Rightarrow\quad 
+\lambda_k < \lambda_L \quad \mbox{dove } k = \frac{2\pi}{\lambda}
+\end{equation}
+dati
+\begin{equation}
+k = \sqrt{\frac{2m}{\hbar^2}(E-V_0)} \quad\quad L = \sqrt{\frac{2m}{\hbar^2}E}
+\end{equation}
+graficando la funzione d'onda $\psi$ in funzione della distanza $r$ vedo che le due zone devono essere unificate imponendo l'uguaglianza e che il parametro $\delta$ permette ciò.
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.1]{/funzione_donda_potenziale}
+\caption{CAPTION}
+\end{figure}
+In particolare presi due punti $r_1$ ed $r_2$ intersezioni tra il grafico e l'asse delle ascisse, cioè dove la funzione si annulla, trovo le relazioni
+\begin{equation}
+\begin{split}
+ & \sin (L r_1 + \delta) = 0 \quad\Leftrightarrow\quad L r_1 + \delta = \pi \\
+ & \sin (L r_2) = 0 \quad\Leftrightarrow\quad L r_2 = \pi
+\end{split}
+\end{equation}
+da cui
+\begin{equation}
+\delta = L (r_2 - r_1) > 0
+\end{equation}
+
+Supponiamo che il potenziale abbia un andamento del tipo 
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.7]{/potenziale_due}
+\caption{CAPTION}
+\end{figure}
+la descrizione matematica sarà equivalente alle precedenti, e si ottiene
+\begin{equation}
+\begin{split}
+\psi_1 = A \sin k r \\
+\psi_2 = E \sin (Lr + \delta)
+\end{split}
+\end{equation}
+ma in questo caso il potenziale è positivo $V_0 > 0$ per cui
+\begin{equation}
+L > k \quad\Rightarrow\quad \lambda_L < \lambda_k
+\end{equation}
+cercando dove le funzioni si annullano trovo
+\begin{equation}
+\begin{split}
+\sin L r_1 & = 0 \quad\Leftrightarrow\quad L r_1 = \pi \\
+\sin L r_2 & = 0 \quad\Leftrightarrow\quad L r_2 + \delta = \pi 
+\end{split}
+\end{equation}
+da cui
+\begin{equation}
+\delta = L (r_1 - r_2) < 0
+\end{equation}
+tornando al grafico \ref{delta_energ} vedo che a basse energie $(E< \SI{300}{MeV})$, per cui delta è maggiore di zero, si ha un potenziale attrattivo, mentre ad energie maggiori, per cui delta è negativo, si ha un potenziale repulsivo.
+
+Possiamo allora caratterizzare completamente il potenziale nucleare,
+\begin{equation}
+r_{\alpha} \sim \SI{0.5}{fm} 
+\quad
+R_{0} \sim \SI{2.1}{fm}
+\end{equation}
+per cui tra $0$ e $r_{\alpha}$ il potenziale è positivo (repulsivo) e tra $r_{\alpha}$ ed $R_0$ è negativo (attrattivo).
+All'interno del nucleo le particelle si dispongono in modo ordinato e non si comprimono, la densità in funzione del numero atomico è costante, è satura.
+Quindi aumentando il numero di massa aumenta il volume del nucleo, poiché la densità è costante.
+\emph{Il volume di un nucleo è direttamente legato al numero di nucleoni.}
+
 
 
 
