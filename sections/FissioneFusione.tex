@@ -243,8 +243,6 @@ Per il corretto funzionamento del reattore devo mantenere $K=1$.
 \end{enumerate}
 
 \paragraph{Controllo del reattore}
-
-\textbf{Esempio}\\
 Si abbia
 \[
 K=1+\delta\hspace{0.5cm}\delta=0,01
@@ -324,7 +322,389 @@ Un'altra catena possibile è
 n+^{232}Th\to ^{233}Th*\to ^{233}Pu\to ^{233}U
 \end{equation}
 
+%nuova sezione-------------------------------------------------------------------------
+\subsection{Fusione Nucleare}
+Prendiamo in considerazione la tabella dell'energia di legame in funzione del numero di massa, come abbiamo già visto il massimo è il ferro 56 che risulta quindi essere il materiale con l'energia di legame più alta.
+\begin{figure}[!h]
+\centering
+\includegraphics[width=180pt]{fig6_03}
+\end{figure}
 
+Come visto nella sezione precedente i materiali pi pesanti del ferro 56, ovvero quelli a destra nel grafico presentano una $\Delta Q$ che rende vantaggiosa la scissione in materiali a numero di massa minore e questo può essere sfruttato per la produzione di energia elettrica nelle centrali nucleari.
+Anche nella parte sinistra della curva si ha una $\Delta Q$, con la tendenza inversa rispetto alla fissione, infatti in questo caso i nuclei tenderanno ad ingrandirsi ovvero a legarsi per raggiungere uno stato più legato, sempre con la liberazione di energia.
+Dato un elemento X e uno Y il processo di fusione sarà del tipo:
+\[
+X+Y\longrightarrow Z+\omega+\Delta Q.
+\]
+Il processo più semplice immaginabile di nucleosintesi è quello tra due protoni
+\[
+^1_1H+^1_1H\longrightarrow ^2_2He
+\]
+Come si è visto questo processo però non può avvenire a causa del principio di esclusione di Pauli, è già stato spiegato nel modello di Fermi che è impossibile avere due protoni nello stesso stato quantico (c'è la necessità di almeno un neutrone che abbia spin solidale al protone per poter mettere un protone con spin opposto e riempire lo stato).
+In realtà la reazione di fusione di due protoni avviene all'interno del sole e più in generale nelle stelle ma ha un tipo diverso di reazione che avviene grazie all'interazione della forza debole:
+\begin{equation}
+^1_1H+^1_1H\longrightarrow ^2_1H+e^++\nu_e
+\end{equation}
 
+La seconda reazione più semplice che può avvenire è quella di fusione del deuterio
+\begin{equation}
+^2_1H+^2_1H\longrightarrow ^4_2He+\Delta Q
+\end{equation}
+Questa è una reazione vantaggiosa sotto più punti di vista.
+In primo luogo, si ha che il deuterio, per quanto sia un isotopo e quindi risulti essere molto raro nell'idrogeno, ha comunque una presenza di una particella ogni circa 7000, il che lo rende praticamente illimitato a livello macroscopico facendo comunque parte dell'idrogeno che rimane il materiale più comune in natura.
+In secondo luogo, rispetto alla fissione che riguarda materiali molto pesanti che danno origine a prodotti radioattivi, questo processo riguarda materiali leggeri e sia prodotti che reagenti non presentano radioattività.
 
+La difficoltà in tutto questo sta nella difficoltà di fare fondere il deuterio, infatti perché la reazione avvenga bisogna riuscire ad avvicinare i due nuclei di deuterio, superando quella che è la forza di repulsione coulombiana 
+\begin{equation}
+F=\frac{Z_1Z_2e^2}{4\pi\varepsilon_0 r^2}
+\end{equation}
+In particolare si ha che questa forza aumenta con il quadrato della distanza mano a mano che si cerca di avvicinare i due nuclei.
+\begin{figure}[h]
+\centering
+\includegraphics[width=120pt]{fig6_04}
+\end{figure}
 
+Rappresentando il potenziale nucleare è vero che se ci si riesce ad avvicinare abbastanza i due deutoni subentra la forza nucleare e i due nuclei sono catturati nella buca, bisogna però considerare che bisogna prima superare la barriera di potenziale data dal potenziale coulombiano. 
+La barriera coulombiana avrà un valore di 
+\begin{equation}
+V_0=\frac{Z_1Z_2e^2}{4\pi\varepsilon_0 R}=\frac{e^2}{4\pi\varepsilon_0 R}\frac{\hbar c}{\hbar c}=\frac{144MeV\cdot fm}{2fm}=0,72MeV=720KeV
+\end{equation}
+Il valore da raggiungere sarà quindi di $720KeV$ che è un valore facilmente ottenibile in un acceleratore, però in questo caso stiamo parlando di fusione per la produzione di energia, ci serve quindi che il numero di nuclidi che fonde sia elevato e inoltr che l'energia prodotta sia maggiore di quella utilizzata per esempio per far funzionare l'acceleratore.
+Dobbiamo basarci quindi sul fatto che la reazione avvenga grazie alla semplice energia termica. 
+Il valore energetico a temperatura ambiente è
+\begin{equation}
+E=KT=\SI{9e-9}{\frac{eV}{K}}300K=0,027eV
+\end{equation}
+La temperatura richiesta quindi affinché avvenga un processo di questo tipo è di 
+\begin{equation}
+T=\frac{E}{T}=\frac{720KeV}{\SI{9e-9}{\frac{eV}{K}}}=\SI{8e9}{K}
+\end{equation}
+Una temperatura non ancora raggiunta! 
+C'è però da considerare che la temperatura del nocciolo del sole, dove questa reazione avviene spontaneamente, è di $\SI{1,5e7}{K}$. 
+Sorge qui una dubbio infatti, trascurando che all'interno del sole subentri anche la forza debole, com'è possibile che avvengano comunque reazioni di fusione?
+
+Bisogna considerare un paio di cose:
+\begin{itemize}
+\item Alle temperature descritte qualsiasi gas raggiunge il quarto stato della materia, ovvero il plasma.
+In questo stato i nuclei e gli elettroni non sono più legati e vagano liberi, si ha quindi che i singoli componenti della materia sono elettricamente carichi pur mantenendo una carica universale neutra del materiale.
+In questo tipo di situazione la  distribuzione delle particella è descritta dalla statistica di Maxwell-Boltzmann che presenta una lunga coda di valori ad alta energia, non è quindi necessario che tutta la distribuzione si trovi ad una temperatura media di $720KeV$ perché sono presenti eventi di fusione anche a temperature più basse.
+\item Bisogna anche considerare che ci troviamo in ambito quantistico e quindi non è necessario raggiungere sempre l'energia massima per superare la barriera di potenziale in quanto grazie all'effetto tunnel può succedere che avvenga anche ad energie più basse.
+\end{itemize}
+
+\paragraph{Calcolo del rate di reazione}
+Supponiamo di avere le particelle bersaglio $X$ e le particelle proiettile $Y$
+\begin{figure}[h]
+\centering
+\includegraphics[width=150pt]{fig6_05}
+\end{figure}
+
+Le particelle proiettile faranno fusione quando entreranno all'interno del raggio d'azione del bersaglio.
+Stiamo praticamente introducendo il concetto di  sezione d'urto.
+Tutte le particelle che entreranno all'interno della zona $vdt$ avranno quindi interazione con il bersaglio ed entro un tempo $dt$ potranno raggiungere il bersaglio.
+Supponendo di avere $n_Y$ particelle per unità di volume il numero di particelle che raggiungeranno il bersaglio sarà dato da
+\begin{equation}
+dN=n_Y \sigma vdt
+\end{equation}
+Si è considerato come $sigma$ l'area di interazione del bersaglio.
+Si trova quindi che il numero di interazioni su di un bersaglio per unità di tempo sarà 
+\begin{equation}
+\frac{dN}{dt}=n_Y\sigma v
+\end{equation}
+Considerando ora tutti i nuclei bersaglio e generalizzando il discorso su tutte le velocità il rate diventa
+\begin{equation}
+Rate=n_Xn_Y<\sigma v>
+\end{equation}
+dove $n_X$ e $n_Y$ sono tutti i nuclei bersaglio e proiettile, e $<\sigma v>$ è una quantità media per indicare la varietà di velocità.
+ 
+\paragraph{Analizziamo ora il termine $<\sigma v>$} Iniziamo da $\sigma$.
+
+Classicamente la sezione d'urto è rappresentata dall'area del bersaglio
+\begin{equation}
+\sigma=\pi R^2
+\end{equation}
+\begin{figure}[h]
+\centering
+\includegraphics[width=150pt]{fig6_06}
+\end{figure}
+
+In questo caso però abbiamo a che fare con un sistema quantistico in cui le particelle che consideriamo sono anche delle onde.
+Supponiamo di avere la particella $Y$ con momento angolare $m_a$, siccome siamo in un sistema quantistico questa quantità risulterà quantizzata e quindi
+\begin{equation}
+m_a=mvb=L\hbar
+\end{equation}
+
+Supponiamo di avere un'altra particella bersaglio, il momento angolare della seconda particella è
+\begin{equation}
+m_a'=mvb_{L+1}=(L+1)\hbar
+\end{equation}
+Supponiamo di prendere una sezione del fascio.
+\begin{figure}[h]
+\centering
+\includegraphics[width=120pt]{fig6_07}
+\end{figure}
+
+Siccome il momento angolare è quantizzato si ha che il valore del momento della corona evidenziata in figura deve corrispondere a $L\hbar$ ovvero la stessa quantità della corona interna.
+L'area della corona è
+\begin{equation}
+A=\pi b_{L+1}^2-\pi b_L^2
+\end{equation}
+Ora, avendo sopra le formule dei momenti angolari quantizzati, posso calcolare le formule di $b_L$ e $b_{L+1}$ e quindi sostituirle nella formula dell'area
+\begin{equation}
+\begin{split}
+A&=\pi \biggl[\left(\frac{(L+1)\hbar}{mv}\right)^2-\left(\frac{L\hbar}{mv}\right)^2\biggl]\\
+&=\pi\frac{\hbar^2}{m^2v^2}[L^2+2L+1-L^2]\\
+&=\pi \frac{\hbar^2}{m^2v^2}[2L+1]
+\end{split}
+\end{equation}
+Per trovare la sezione d'urto finale bisogna sommare di conseguenza tutti i momenti angolari fino a che non coprirò tutto il nucleo (fino quindi al momento angolare massimo).
+Come momento angolare massimo avrò
+\begin{equation}
+mvR=L_{max}\hbar
+\end{equation}
+Calcoliamo quindi la sezione d'urto totale
+\begin{equation}
+\begin{split}
+\sigma&=\sum_{L=0}^{L_{max}}\pi \frac{\hbar^2}{m^2v^2}[2L+1]\\
+&=\pi \frac{\hbar^2}{m^2v^2}[1+3+5+ ... +2L_{max}+1]\\
+&=\pi \frac{\hbar^2}{m^2v^2}\left(\frac{L_{max}+1}{2}\right)+(1+2L_{max}+1)\\
+&=\pi \frac{\hbar^2}{m^2v^2}(L_{max}+1)^2
+\end{split}
+\end{equation}
+Posso quindi sostituire ad $L_{max}$ quella che trovo come dimensione del nucleo
+\begin{equation}
+\begin{split}
+\sigma&=\pi \frac{\hbar^2}{m^2v^2}\left(\frac{mvR}{\hbar}+1\right)^2\\
+&=\pi\left(\frac{\hbar}{mv}\frac{mvR}{\hbar}+\frac{\hbar}{mv}\right)\\
+&=\pi\left(R+\frac{\hbar}{mv}\right)^2
+\end{split}
+\end{equation}
+Possiamo quindi fare un paio di considerazioni. 
+Il termine $\pi R^2$ all'interno della formula è il termine di interpretazione classica della sezione d'urto (vista come un'area) corrispondente alla dimensione del nucleo bersaglio.
+$(\hbar/mv)^2$ rappresenta invece il termine quantistico della sezione d'urto e si può vedere che in questo caso domina la formula.
+\begin{equation}
+\frac{\hbar^2}{m^2v^2}=\frac{\hbar^2}{mmv^2}\frac{c^2}{c^2}=\frac{(200MeV\cdot fm)^2}{1000MeV\times 10^{-3}MeV}=200fm^2
+\end{equation}
+Si vede chiaramente che questa quantità è molto maggiore della del valore dato dal termine $R^2$ dato che solitamente $R=2fm$.
+La sezione d'urto può quindi essere riscritta come 
+\begin{equation}
+\sigma=\pi^2\frac{\hbar^2}{m^2v^2}
+\end{equation}
+La sezione d'urto trovata riguarda solamente le particelle nella buca di potenziale ma non è stato considerato il potenziale coulombiano a di fuori della buca.
+Mentre per quanto riguarda la particella nella buca di potenziale la particella è descritta dall'equazione di Shroedinger indipendente dal tempo 
+\begin{equation}
+\frac{d^2\psi}{dx^2}=-\frac{2m}{\hbar}(E-V_0)\psi
+\end{equation}
+Le cui soluzioni sono del tipo
+\begin{equation}
+\psi=e^{-Kx}\hspace{1cm} K=-\frac{2m}{\hbar}(E-V_0)
+\end{equation}
+nel caso della sezione d'urto della barriera di potenziale coulombiano, basta spostare la zona in analisi, quello che si trova è che 
+\begin{equation}
+P\propto |\psi|^2\propto e^{-2Kx}
+\label{FF:01}
+\end{equation}
+in cui i valori di $E$ e $V_0$ sono i valori della barriera.
+
+In realtà per fare un conto preciso bisognerebbe fare un integrazione con tutti i valori infinitesimi della barriera di potenziale vista come la somma di tante barriere di energia incrementale calcolate con la probabilità ~\eqref{FF:01}.
+Il calcolo non viene fatto, il risultato che si ottiene alla fine è
+\begin{equation}
+\sigma=\frac{\pi \hbar^2}{m^2v^2}e^{\frac{-Z_1Z_2}{4\pi \varepsilon_0}\frac{2\pi}{\hbar v}}
+\end{equation}
+Il termine moltiplicativo iniziale è il termine senza termine coulombiano, mentre l'esponenziale rappresenta la probabilità di attraversamento della barriera.
+Possiamo quindi evidenziare le dipendenze ragruppando le costanti
+\begin{equation}
+\sigma=\frac{C_0}{v^2}e^{-\frac{a}{v}}
+\end{equation}
+Per comodità si può anche esprimere la velocità in funzione dell'energia
+\begin{equation}
+E=\frac{1}{2}mv^2\to v=\sqrt{\frac{2E}{m}}
+\end{equation}
+Che restituisce la funzione della sezione d'urto desiderata
+\begin{equation}
+\sigma=\frac{C_0}{v^2}e^{-\frac{a}{\sqrt{E}}}
+\end{equation}
+Come era intuibile si vede che aumentando l'energia (e quindi la velocità) anche la sezione d'urto (ovvero la probabilità di superare la barriera) aumenta.
+
+L'ultimo passo che manca è di tener conto della distribuzione di velocità e quindi dell'energia delle particelle.
+La distribuzione maxweliana (in funzione della velocità) è
+\begin{equation}
+\begin{split}
+N(v)&=\left(\frac{2}{\pi}\right)^{1/2}\left(\frac{m}{KT}\right)^{3/2}v^2e^{-\frac{E}{KT}}\\
+&=C_0'v^2e^{-\frac{E}{b}}
+\end{split}
+\end{equation}
+Il rate di reazione è quindi 
+\begin{equation}
+\begin{split}
+\sigma v&=\frac{C_0}{v^2}e^{-\frac{a}{\sqrt{E}}}C_0' v^2e^{-\frac{E}{b}}\\
+&=C_0 e^{-\frac{a}{\sqrt{E}}}e^{-\frac{E}{b}}
+\end{split}
+\end{equation}
+
+Supponiamo di rappresentare in uno o stesso grafico la sezione d'urto, la velocità e la loro moltiplicazione, in numero di particelle particelle in funzione  dell'energia.
+Quello che si vede è che le due grandezze hanno picchi opposti rispetto all'aumentare dell'energia, il che risulta nel fatto che la loro moltiplicazione possiede un picco centrale tra i due picchi detto \emph{picco di Gamov}, che corrisponde alla zona a probabilità più alta di avere fusione nucleare.
+\begin{figure}[h]
+\centering
+\includegraphics[width=170pt]{fig6_08}
+\end{figure}
+
+\paragraph{Fusione con il trizio}
+Se fin a d'ora il processo analizzato riguardava due nuclei di deuterio, analizziamo ora una reazione del tipo
+\begin{equation}
+^2_1H+^3_1H\longrightarrow ^4_2He+n+Q
+\end{equation}
+L'energia prodotta da una reazione di questo tipo è molta
+\begin{equation}
+Q=17,6MeV
+\end{equation}
+Il problema è però che il trizio non è un isotopo così stabile in quanto decade $\beta$; 
+ha una vita media di 11 anni e quindi non si può trovare in natura, è necessario quindi produrlo.
+La produzione in realtà è piuttosto semplice, basta infatti ricoprire la camera di un reattore con del Litio che fare reazione con i neutroni
+\begin{equation}
+n+^6_3Li\longrightarrow ^3_1H+^4_2He
+\end{equation}
+La fusione con il trizio è preferibile a quella solamente con il deuterio perché ha un rapporto tra energia in ingresso ed energia in uscita molto più favorevole.
+Si ha inoltre che per innescare e mantenere la reazione è necessario superare un certo valore di soglia dato dall'effetto di Bremsstralung che è molto presente nel plasma.
+Per la reazione deuterio-trizio questo valore è di $4keV$ mentre per la reazione deuterio-deuterio è di $40KeV$.
+
+Consideriamo ora l'energia in uscita rispetto all'energia in ingresso.
+Supponiamo di avere due specie
+\begin{equation}
+n_x+n_y=n
+\end{equation}
+Per esempio uno può essere il deuterio e l'altro sia il trizio, per semplicità ne prendiamo parti uguali
+\begin{equation}
+n_x=n/2 \hspace{0.5cm} n_y=n/2
+\end{equation}
+Per mantenere il plasma una certa temperatura $D$ devo fornire in ingresso una certa energia data da
+\begin{equation}
+E_{ing}=\frac{3}{2}KT[2n]=3KTn
+\end{equation}
+L'energia in ingresso deve essere minore dell'energia in uscita altrimenti non posso sfruttare il processo per la produzione di energia.
+Il rate del processo abbiamo visto che è
+\begin{equation}
+R=n_xn_y<\sigma v>=\frac{n^2}{4}<\sigma v>
+\end{equation}
+E l'energia in uscita dipenderà da questo rate appena trovato
+\begin{equation}
+E_{usc}=R\tau Q=\frac{n^2}{4}<\sigma v>\tau Q
+\end{equation}
+dove $\tau$ è detto tempo di confinamento e corrisponde al tempo in cui faccio avvenire la reazione.
+La condizione necessaria per la produzione di energia è
+\begin{equation}
+\begin{split}
+E_{usc}>E_{ing}&\to \frac{n^2}{4}<\sigma v>\tau Q > 3KTn\\
+n\tau &>\frac{12KT}{<\sigma v> Q} 
+\end{split}
+\end{equation}
+Questa condizione appena trovata viene chiamata da chi studia il plasma \emph{criterio di Lauson}.
+
+La differenza tra la situazione deuterio-deuterio e deuterio-trizio e che ci fa preferire la seconda reazione può essere vista facendo il grafico della $n\tau$ in funzione della temperatura.
+\begin{figure}[h]
+\centering
+\includegraphics[width=170pt]{fig6_09}
+\end{figure}
+
+In questo grafico il criterio di Lawson è già verificata e ciò che si vuole vedere è la reazione energeticamente favorita. 
+Si può notare come la reazione deuterio-trizio sia preferibile su tutti i valori di temperatura.
+Il minimo che corrisponde al valore di temperatura che cerchiamo si ha per $25KeV$.
+Questo corrisponde ad una temperatura di 
+\begin{equation}
+T=\frac{E}{K}=\frac{25KeV}{\SI{9e-5}{\frac{eV}{K}}}=\SI{3e8}{K}
+\end{equation}
+Che rimane più bassa della temperatura trovata inizialmente e che quindi rende già la situazione più ottimistica.
+
+\paragraph{Confinamento magnetico}
+Quello che rimane particolarmente problematico per una reazione di fusione è il confinamento.
+Il plasma infatti non può venire in contatto con nessun tipo di superficie, si parla quindi di confinamento magnetico.
+Si supponga di avere una particella con una certa velocità e di avere un campo magnetico.
+\begin{figure}[h]
+\centering
+\includegraphics[width=150pt]{fig6_10}
+\end{figure}
+
+Quello che si può generare è un moto a spirale della particella, infatti la componente trasversale genera sotto campo magnetico un moto circolare che aggiunto alla velocità orizzontale diventa un moto a spirale.
+Per supportare questo moto c'è quindi necessità di sfruttare una struttura simile agli acceleratori (visibile anche in figura) definita modello \emph{Tokamak}.
+
+I problemi della fusione tecnologici rimangono comunque ancora alti (per esempio il riscaldamento del plasma) e per questo non esiste ancora un reattore funzionante. 
+
+\paragraph{Progetti attualmente in costruzione}
+Esistono dei progetti sperimentali che continuano a cercare di realizzare questo tipo di produzione energetica.
+\begin{itemize}
+\item Progetto \textbf{ITER} (International Thermonuclear Experimental Reactor) Realizzato in Francia con uno sforzo internazionale, sta costando miliardi e il prezzo continua ad aumentare. 
+Dovebbe essere effettivamente attivo nel 2050.
+\item Progetto \textbf{JET} (Joint European Thorus)
+\end{itemize}
+Quello che si è riusciti a raggiungere per ora è
+\[
+E_{out}\sim 70\% E_{in}
+\] 
+
+\paragraph{Confronto tra i processi di produzione energetica}
+Si propone ora un conto di confronto tra la produzione energetica e di combustione, fissione e fusione, considerando pure i prodotti di scarto.
+Il conto è a solo scopo di studio e non ha nessuna intenzione politico/propagandistica.
+\begin{itemize}
+\item Si comincia dallo studio della \emph{combustione di carbone}.
+Iniziamo cercando si ricavare la densità energetica prodotta per unità di massa.
+
+Ricordiamo il peso di una mole di carbone
+\begin{equation}
+mole_C=1,2\times10^{-3}Kg\to 1kg_C=80 mol
+\end{equation} 
+Per ogni reazione di combustione produciamo
+\begin{equation}
+1,5eV/atomo
+\end{equation}
+Quindi la densità energetica è
+\begin{equation}
+1,5\frac{eV}{atomo}\cdot 6\times10^{23}\frac{atomo}{mol}\cdot 2\times 10^{-19}\frac{J}{eV}\cdot 80\frac{mol}{kg}=10^7\frac{J}{eV}
+\end{equation}
+Qual'è quindi la porzione di massa che viene convertita in energia?
+\begin{equation}
+10^7\frac{J}{kg}\div c^2=10^{-10}\frac{energia}{massa}
+\end{equation}
+Significa che per esempio di una petroliera, che corrisponde a circa $100000$ tonnellate di combustibile, vengono convertiti in energia $\sim 10g$. 
+Il resto è tutto residuo.
+
+\item Si prende in considerazione la \emph{fissione dell'uranio}.
+
+In questo caso il peso di una mole è
+\begin{equation}
+mole=2,4\times10^{-1}Kg\to 1kg=4mol
+\end{equation}
+L'energia prodotta per fissione è di 
+\begin{equation}
+200MeV/fissione
+\end{equation}
+Quindi la densità di energia dell'uranio è
+\begin{equation}
+2\times 10^8\frac{eV}{nucleo}\cdot 6\times10^{23}\frac{atomo}{mol}\cdot 2\times 10^{-19}\frac{J}{eV}\cdot4\frac{mol}{kg}=10^4\frac{J}{kg}
+\end{equation}
+Il che significa che la massa convertita corrisponde a
+\begin{equation}
+10^{-3}\frac{energia}{massa}
+\end{equation}
+Il che vuol dire che $10g$ di massa convertita corrispondono a $10kg$ di materiale sfruttato, il resto sono scorie, purtroppo altamente radioattive.
+
+\item Passiamo infine alla \emph{fusione nucleare}.
+
+Una mole di materiale corrisponde a 
+\begin{equation}
+mole=2\times10^{-3}kg\to 1kg=500mol
+\end{equation}
+Con un'energia per fusione pari a 
+\begin{equation}
+17,6MeV/fusione
+\end{equation}
+La densità energetica è
+\begin{equation}
+1,8\times 10^7\frac{eV}{fusione}\cdot 6\times10^{23}\frac{atomo}{mol}\cdot 2\times 10^{-19}\frac{J}{eV}\cdot 250\frac{mol}{kg}=5\times 10^14\frac{J}{kg}
+\end{equation}
+(vanno considerate metà moli perché la fusione riguarda due nuclei al posto che uno).
+
+La conversione sarà quindi di 
+\begin{equation}
+5\times 10^{-2}\frac{energia}{massa}
+\end{equation}
+Ciò vuol dire che per convertire $10g$ di materiale necessito di $5kg$ di deuterio/trizio, il resto sarà residuo, ma in questo caso di $He$ che non è radioattivo (e dal punto di vista dell'inquinamento prevede quantità molto più limitate di emissioni rispetto al carbone).
+\end{itemize}
