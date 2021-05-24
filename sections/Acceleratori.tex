@@ -1,9 +1,8 @@
-\section{Il Modello Standard}
-In questa sezione verrà studiato quello che è il modello standard delle particelle, ovvero tutte le leggi date per confermate e che costituiscono la base degli studi fisici. 
-Esistono delle teorie con evidenze sperimentali che vanno oltre a questo modello ma sono spesso teorie non ancora totalmente sviluppate che verranno implementate.
-Lo studio del modello standard sarà approfondito nei corsi della magistrale ma è giusto che uno studente della triennale abbia comunque un'idea generale di quello che è.
+%Zarantonello Umberto 2021-05-24
 
-%nuova sezione------------------------------------------------------------------------------ 
+\section{Acceleratori di Particelle}
+
+%nuova sezione----------------------------------------------------------------------------- 
 \subsection{Fisica degli acceleratori di particelle}
 La conoscenza della fisica degli acceleratori è essenziale per ogni tipo di fisico in quanto ha applicazioni in ogni campo fisico.
 Ne approfondiamo quindi quelli che sono i fondamenti e le grandezze base per poter avere un'idea più chiara del loro funzionamento.
@@ -15,7 +14,7 @@ Solo avendo il controllo della quantità ed energia di particelle si sarebbe pot
 
 I parametri che caratterizzano gli acceleratori sono sostanzialmente l'energia e la luminosità.
 
-\paragraph{Energia}. 
+\paragraph{Energia}
 
 \'E importante conoscere l'energia perché la risoluzione con la quale possiamo risolvere un bersaglio dipende dalla lunghezza d'onda della sonda con la quale bombardiamo l'oggetto in analisi.
 Prendendo un oggetto di raggio R, la lunghezza d'onda della sonda dovrà essere
@@ -55,27 +54,27 @@ Nel caso invece del bersaglio fisso l'energia è più bassa, ergo si fa più fat
 
 Facciamo quindi delle stime sui due metodi
 \begin{itemize}
-\item Caso del collisore simmetrico.
+\item \emph{Caso del collisore simmetrico}
 
 Si consideri di avere due fasci paralleli e opposti in collisione, per semplicità adotteremo la semplificazione $\hbar=c=1$.
 Il quadrivettore legato alla particella 1 è dato da
 \begin{equation}
-p_1*=(E_1*,\bar{p})
+p_1^*=(E_1^*,\bar{p})
 \end{equation}
 (con asterisco indico le quantità misurate nel centro di massa).
 Siccome i due fasci hanno lo stesso momento contropropagante è utile porsi nel sistema di riferimento del centro di massa , inoltre le due quantità di moto saranno identiche per cui non serve distinguere tra $\bar{p_1}$ e $\bar{p_2}$.
 \begin{equation}
-p_2*=(E_2*,-\bar{p})
+p_2^*=(E_2^*,-\bar{p})
 \end{equation}
 Si sa dalla meccanica relativistica che il quadrato del quadrivettore è un invariante relativistico
 \begin{equation}
-{p_1*}^2=E_1*-\bar{p}^2=m_1^2\\hspace{0.5cm}{p_2*}^2=E_2*-\bar{p}^2=m_2^2
+{p_1^*}^2=E_1^*-\bar{p}^2=m_1^2\hspace{0.5cm}{p_2^*}^2=E_2^*-\bar{p}^2=m_2^2
 \end{equation}
 L'energia nel centro di massa è la somma dei quadrivettori al quadrato
 \begin{equation}
 \begin{split}
-&s=(p_1*+p_2*)2=(E_1*+E_2*, \bar{p}-\bar{p})^2\\
-&\to E_{CM}=\sqrt{s}=E_1*+E_2*
+s=(p_1^*+p_2^*)2&=(E_1^*+E_2^*, \bar{p}-\bar{p})^2\\
+\to E_{CM}=\sqrt{s}&=E_1^*+E_2^*
 \end{split}
 \end{equation}
 Suppongo che il collider è simmetrico e che le particelle scontrate siano in entrambi i casi protoni (quindi di massa $m_p$).
@@ -119,7 +118,7 @@ T_{cm}\ge \frac{m_{\pi^0}}{2}=67,5MeV
 L'energia cinetica richiesta per ogni fascio sarà quindi sempre pari alla metà dell'energia di massa della singola particella.
 Questo si ottiene in quanto dobbiamo considerare che il centro di massa sarà sempre uguale.
 
-\item Caso del bersaglio fisso.
+\item \emph{Caso del bersaglio fisso}
 
 Nel sistema di riferimento del laboratorio abbiamo che i due quadrivettori saranno 
 \begin{equation}
@@ -236,7 +235,7 @@ Di questi fanno parte:
 \item sincrotrone
 \end{itemize}
 
-\paragraph{Van De Graaf}
+\subsubsection{Van De Graaf}
 \begin{figure}[h]
 \centering 
 \includegraphics[width=160pt]{fig7_01}
@@ -251,13 +250,13 @@ Tutto il sistema viene messo all'interno di grossi contenitori isolati in quanto
 Il \textbf{Tandem}, è basato sullo stesso principio del Van de Graaf, solo che la differenza di potenziale viene raddoppiata, ponendo la sfera all'interno di un altro conduttore.
 \begin{figure}[h]
 \centering
-\includegraphics[width=200pt]{fig7_02}
+\includegraphics[width=250pt]{fig7_02}
 \caption{Configurazone Tandem}
 \end{figure}
 Il potenziale che si riesce a creare è il doppio del potenziale di partenza.
 A Legnaro è presente un acceleratore con questa configurazione e viene utilizzato per esperimenti di \emph{Rutherford backscattering}, in cui si sfrutta lo scattering del fisico neozelandese per esperimenti di spettroscopia (studiando l'energia delle particelle backscatterate si riesce a capire la composizione superficiale del bersaglio).
 
-\paragraph{Acceleratore lineare: LINAC}
+\subsubsection{Acceleratore lineare: LINAC}
 Il LINAC è stato rivoluzionario come acceleratore perché supera il limite nella generazione di potenziali.
 Questo acceleratore è composto da una serie di elettrodi separati che variano la polarità con un'onda a radiofrequenza.
 \begin{figure}[h]
@@ -269,7 +268,7 @@ Questo acceleratore è composto da una serie di elettrodi separati che variano l
 Quello che si vuole generare con questo tipo di configurazione è un potenziale sempre negativo per la particella accelerata, infatti riuscendo a variare il potenziale al passaggio della particella, facendolo passare da positivo a negativo e viceversa, la particella nel sistema sarà sempre accelerata da un potenziale negativo rispetto a quello che ha alle sue spalle (che nel frattempo è diventato positivo).
 Tutto questo fa si che pur mantenendo una differenza di potenziale piuttosto bassa si riesca ad accelerare particelle ad alte energie, questo metodo è usato per esempio per gli elettroni (in orbita circolare gli elettroni emettono radiazione).
 
-\paragraph{Ciclotrone}
+\subsubsection{Ciclotrone}
 Il ciclotrone utilizza una combinazione di campi elettrici e magnetici.
 Supponiamo di avere un campo magnetico entrante e di porci una particella (per esempio un protone) ciò che si crea è una forza di Lorentz, quindi a causa del campo magnetico la particella percorre una traiettoria circolare.
 \begin{figure}[h]
@@ -308,3 +307,294 @@ Questo è ovviamente valido finché non si manifestano effetti relativistici sul
 m=m_0\cdot \gamma
 \end{equation}
 Esiste quindi un limite che corrisponde a qualche percentuale della velocità della luce (per esempio un protone che ha massa dell'ordine del $GeV$ può essere accelerato fino ad un massimo di $\sim 20MeV$).
+
+\subsubsection{Betatrone}
+\'E anche questo un acceleratore circolare.
+Il campo magnetico viene usato in questo caso sia per il confinamento che per l'accelerazione delle particelle.
+Se è vero che il campo magnetico di per sé non può accelerare le particelle si sa anche che la variazione del campo, grazie alla legge di Faraday, genera un campo elettrico.
+La configurazione magnetica del Betatrone viene mostrata in figura ed è formata da due piastre conduttrici a forma di piatto rovesciato separate da una ciambella ceramica.
+\begin{figure}[h]
+\centering
+\includegraphics[width=150pt]{fig7_05}
+\caption{Sezione verticale del Betatrone}
+\end{figure}
+
+Il campo magnetico è costante nel centro della configurazione ma decresce andando verso l'esterno.
+La ciambella ceramica  è vuota ed è il percorso all'interno del quale vengono accelerate le particelle.
+Il fatto che il campo decresca genera un problema di focalizzazione, per questo viene solitamente considerato un sistema a focalizzazione debole.
+Bisogna considerare che le particelle continuando a percorrere più volte lo stesso spazio tenderanno ad avere traiettorie leggermente diverse e quindi un po' alla volta si disperderanno.
+
+Ci concentriamo ora sui campi.
+Chiamiamo $\bar{B}$ il campo magnetico medio interno alla ciambella e $B_0$ il campo che le particelle vedono.
+Se varia il campo medio viene generato un campo elettrico che è quello che porta all'accelerazione delle particelle mentre $B_0$ corrisponde al campo che tiene le particelle all'interno della cavità, ci deve essere quindi una ben definita relazione tra $\bar{B}$ e $B_0$.
+
+La prima legge che ci è utile è la legge di Faraday-Lenz
+\begin{equation}
+\frac{d\Phi (B)}{dt}=-\oint \vec{E} d\vec{l}
+\end{equation}
+Il flusso è dato da
+\begin{equation}
+\Phi(B) =\pi r^2\frac{d\bar{B}dt}{-E2\pi r}\to E=-\frac{r}{2}\frac{d\bar{B}}{dt}
+\end{equation}
+La forza accelerante vista dalle particelle è del tipo 
+\begin{equation}
+F=-lE=\frac{er}{2}\frac{d\bar{B}}{dt}
+\end{equation}
+Al tempo stesso il campo $B_0$ deve fornire l'accelerazione centripeta, per tenere all'interno le particelle.
+\begin{equation}
+evB_0=\frac{mv^2}{r}\to \frac{pv}{r}evB_0\to p=erB_0
+\end{equation}
+Ricaviamo quindi la forza
+\begin{equation}
+F=\frac{dp}{dt}=\frac{d}{dt}(erB_0)=er\frac{dB_0}{dt}
+\end{equation}
+Le due forze devono essere uguali, si ottiene
+\begin{equation}
+\frac{er}{2}\frac{d\bar{B}}{dt}=er\frac{dB_0}{dt}\to \frac{dB_0}{dt}=\frac{1}{2}\frac{d\bar{B}}{dt}
+\end{equation}
+Che integrando ci restituisce la condizione
+\begin{equation}
+\bar{B}=2B_0+cost
+\end{equation}
+
+\subsubsection{Sincrotrone}
+\'E un acceleratore circolare a sfrutta anch'esso i campi magnetici (sono l'unico modo per accelerare delle particelle) e la cui idea di base è il disaccoppiamento delle funzioni principali dell'acceleratore.
+\begin{figure}[h]
+\centering
+\includegraphics[width=190pt]{fig7_06}
+\end{figure}
+
+Il campo magnetico in questo caso viene generato da quella che viene chiamata cavità a radiofrequenza, ovvero un qualunque dispositivo con all'interno un campo elettrico oscillante con la frequenza delle radio-onde.
+In questa cavità la particella passerà con una certa frequenza e il modo per accelerarla è fare si che ad ogni passaggio sia sempre in una fase del campo elettrico accelerante.
+Bisogna considerare che all'interno del sincrotrone la particella avrà una frequenza dell'ordine del $MHz$ (ogni secondo le particelle faranno un milione di giri all'interno dell'anello di accumulazione) e che per fare esperimenti l'obiettivo è di tenere le particelle per ore all'interno del dispositivo, per cui il minimo errore di traiettoria provocherebbe la dispersione del fascio.
+ 
+Le grandezze di base (e indipendenti tra loro) del sincrotrone sono:
+\begin{itemize}
+\item \emph{Accelerazione}: tramite campi elettrici a radiofrequenza;
+
+\item \emph{Guida}: tramite dipoli magnetici;
+
+\item\emph{Focalizzazione}: tramite quadrupoli magnetici.
+\end{itemize}
+L'accelerazione non verrà trattata per tempistiche, studiamo però i campi magnetici che vengono sfruttati.
+
+Il \emph{campo di dipolo magnetico} è composto da due poli, uno nord e uno sud, con le linee di campo dirette da nord a sud perpendicolarmente.
+\begin{figure}[h]
+\centering
+\includegraphics[width=140pt]{fig7_07}
+\end{figure}
+
+Supponendo di avere una carica positiva entrante nel dipolo, per la regola della mano destra viene generata una forza perpendicolare sia al campo che alla particella.
+In questo modo il dipolo confina la particella senza compiere lavoro (i campi magnetici non compiono mai lavoro), generando un moto circolare.
+Calcoliamo quindi la relazione tra la curvatura e il campo magnetico sfruttando la relazione di Lorentz.
+\begin{equation}
+\begin{split}
+\frac{mv^2}{R} & =qvB\\
+mv & =qRB\\
+p & =qRB\\
+pc & =qcRB
+\end{split}
+\end{equation}
+Nel sistema di unità di misura internazionale $pc$ si misura in $[J]$, $B$ in $[T]$ e il raggio $R$ in $[m]$.
+\begin{equation}
+pc[J]=1,6\times10^{-19}C\cdot3\times10^8\frac{m}{s}B[T]R[m]
+\end{equation}
+Volendo però passare alle unità naturali si ottiene
+\begin{equation}
+pc [GeV]=0,3 B[T]R[m]
+\end{equation}
+$B\cdot R$ viene solitamente chiamata rigidità magnetica dell'anello.
+
+Questa formula è molto utile perché, conoscendo direttamente il campo magnetico e la lunghezza di un anello, possiamo già calcolare l'energia massima a cui possiamo accelerare le particelle.
+Per esempio l'LHC del Cern ha un raggio di 
+\begin{equation}
+2\pi R=27km
+\end{equation}
+E un campo medio esistente di 
+\begin{equation}
+B=5,4T
+\end{equation}
+Il che porta a particelle di quantità di moto
+\begin{equation}
+p=7\frac{TeV}{c}
+\end{equation}
+Il numero di dipoli che devo inserire poi in un anello è di 
+\begin{equation}
+\theta=\frac{2\pi}{N}
+\end{equation}
+Dove $N$ è il numero di dipoli.
+Un'altra cosa che posso già calcolare, sapendo $\theta$ e la lunghezza di un dipolo $L$ è il raggio di curvatura
+\begin{equation}
+R=\frac{L}{\theta}
+\end{equation}
+
+Ora abbiamo visto il confinamento delle particelle e il suo funzionamento ma c'è da considerare che la vita media delle particele in un sincrotrone è di una decina di ore e che la mole di particelle è dell'ordine del miliardo è quindi fondamentale la \emph{focalizzazione}.
+Come abbiamo visto il metodo di focalizzazione è il \emph{quadrupolo magnetico}, composto, come suggerisce il nome, da quattro poli, due nord e due sud.
+Le linee di campo anche in questo caso sono rivolte da nord a sud.
+\begin{figure}[h]
+\centering
+\includegraphics[width=250pt]{fig7_08}
+\caption{A sinistra sono evidenziale le linee di campo del quadrupolo mentre a destra le forze generate}
+\end{figure}
+
+Le forze sono sempre ricavate utilizzando la forza
+\begin{equation}
+\vec{F}=q\vec{v}\times\vec{B}
+\end{equation}
+Tralasciando i segni abbiamo quindi che 
+\begin{equation}
+F_x=qvB_y\hspace{1cm} F_y=qvB_x
+\end{equation}
+La differenza tra la forza che agisce lungo l'asse delle $x$ e l'asse delle $y$, è che la forza $F_x$ tende a focalizzare il fascio mentre la forza $F_y$ tende a defocalizzarlo nel senso che una avvicina al centro mentre l'altra allontana.
+Abbiamo inoltre che i campi in questo caso particolare tendono ad aumentare e quindi a generare più forza più ci si allontana dal centro di coordinate, corrispondente al centro del quadrupolo.
+\begin{equation}
+\begin{split}
+B_y & \propto x\\
+B_y & =\frac{dB_y}{dx}x\\
+F_x & =qvB_y=qv\frac{dB_y}{dx}x
+\end{split}
+\end{equation}
+
+L'effetto di questa forza è quello di variare la quantità di moto.
+\begin{equation}
+\Delta p_x=F_x \Delta t=qv\frac{dB_y}{dx}x \frac{d}{v}=q\frac{dB_y}{dx}xd
+\end{equation}
+dove $d$ è la profondità del magnete.
+Si ha quindi che la variazione della quantità di moto è linearmente dipendente dalla posizione della particella.
+L'effetto di una variazione della quantità di moto è di variare la pendenza della particella lungo l'asse delle $x$.
+\begin{equation}
+\Delta x'=\frac{\Delta p_x}{p}=qx \frac{B_y}{dx}\frac{d}{p}
+\end{equation}
+Si ha dunque che 
+\begin{equation}
+\Delta x' \propto x
+\end{equation}
+L'effetto di un quadrupolo magnetico in definitiva è quello di variare l'inclinazione di una particella rispetto all'asse $z$ in funzione della sua distanza dal centro il che corrisponde esattamente all'effetto di una lente che focalizza ad una distanza 
+\begin{equation}
+f=-\frac{p}{\frac{dB_y}{dx}d}
+\end{equation}
+(il segno meno indica l'effetto di focalizzazione).
+
+Come si è già visto se una componente focalizza l'altra defocalizza e il punto focale sarà 
+\begin{equation}
+f=+\frac{p}{\frac{dB_x}{dy}d}
+\end{equation}
+La peculiarità dei quadrupoli magnetici è che focalizzando in una direzione si va a defocalizzare nell'altra.
+Per avere la focalizzazione si dovrà allora sfruttare quello che in ottica viene chiamato doppietto, ovvero il sistema composto da due lenti con lunghezze focali $f_1, f_2$ poste ad una distanza $d$.
+In questo modo la focale equivalente è 
+\begin{equation}
+\frac{1}{f}=\frac{1}{f_1}+\frac{1}{f_2}-\frac{d}{f_1f_2}
+\end{equation}
+Che nel nostro caso può essere semplificato a 
+\begin{equation}
+f_1=-f_2\to \frac{1}{f}=\frac{d}{f_1f_2}
+\end{equation}
+
+Per descrivere matematicamente questo sistema si sfrutta un formalismo matriciale ovvero si va a schematizzare ogni elemento con una matrice che prende un valore di ingresso e me lo restituisce trasformato.
+\begin{equation}
+\begin{pmatrix}
+u\\
+u'
+\end{pmatrix}_{out}
+=
+\begin{pmatrix}
+C & S\\
+C' & S'
+\end{pmatrix}
+\begin{pmatrix}
+u\\
+u'
+\end{pmatrix}_{in}
+\end{equation}
+Vuol dire che io prendo qualunque elemento e riassumo il suo  effetto in quello di trasformare una serie di condizioni del fascio in ingresso nelle condizioni del fascio in uscita.
+Nel caso generale mettendo insieme $x$ e $y$ avremo delle matrici $4\times 4$ che moltiplicano dei vettori che ci indicano le posizioni radiali del fascio.
+\begin{equation}
+\begin{pmatrix}
+x\\x'\\y\\y'
+\end{pmatrix}_{out}
+=
+\begin{pmatrix}
+C_x&S_x&0&0\\C'_x&S'_x&0&0\\0&0&C_y&S_y\\0&0&C'_y&S'_y
+\end{pmatrix}
+\begin{pmatrix}
+x\\x'\\y\\y'
+\end{pmatrix}_{in}
+\end{equation}
+Tutte queste sono funzioni del tipo
+\begin{equation}
+x=x(s)
+\end{equation}
+Dove $s$ mi indica la posizione dell'elemento lungo l'anello.
+Gli $0$ nelle matrici mi indicano che gli elementi non perturbano.
+
+Per esempio si prenda una particella in posizione $x_0$ in movimento, costruiamone la \emph{matrice di drift}.
+\begin{figure}
+\centering
+\includegraphics[width=150pt]{fig7_09}
+\end{figure}
+
+Quello che si otterrà dopo una distanza $L$ dovrebbe essere uno spostamento del tipo
+\begin{equation}
+\begin{split}
+x(L) & =x_0+Lx'_0\\
+x'(L) & =x'_0
+\end{split}
+\end{equation}
+in quanto la particella è soggetta ad una forza che la muove verso l'alto.
+La situazione viene descritta in forma matriciale
+\begin{equation}
+\begin{pmatrix}
+x\\x'
+\end{pmatrix}_{out}
+=
+\begin{pmatrix}
+1&L\\0&1
+\end{pmatrix}
+\begin{pmatrix}
+x\\x'
+\end{pmatrix}_{in}
+\end{equation}
+
+La rappresentazione di un quadrupolo deve esprimere la variazione della pendenza.
+Quello che si vede nel caso di una lente focalizzante è che 
+\begin{equation}
+x{out}=x_{in}\hspace{1cm}x'_{out}=-\frac{1}{f}x_{in}+x'_{in}
+\end{equation}
+che in forma matriciale diventa
+\begin{equation}
+\begin{pmatrix}
+x\\x'
+\end{pmatrix}_{out}
+=\begin{pmatrix}
+1&0\\-\frac{1}{f}&1
+\end{pmatrix}
+\begin{pmatrix}
+x\\x'
+\end{pmatrix}_{in}
+\end{equation}
+Nel caso della lente defocalizzante si avrà invece
+\begin{equation}
+\begin{pmatrix}
+y\\y'
+\end{pmatrix}_{out}
+=\begin{pmatrix}
+1&0\\+\frac{1}{f}&1
+\end{pmatrix}
+\begin{pmatrix}
+y\\y'
+\end{pmatrix}_{in}
+\end{equation}
+
+Per completezza mostriamo anche la matrice rappresentante un dipolo
+\begin{equation}
+\begin{pmatrix}
+x\\x'
+\end{pmatrix}_{out}
+=\begin{pmatrix}
+\cos\theta & \sin\theta \\-\frac{1}{\rho}\sin\theta & \cos\theta
+\end{pmatrix}
+\begin{pmatrix}
+x\\x'
+\end{pmatrix}_{in}
+\end{equation}
+dove $\rho$ rappresenta il raggio di curvatura.
