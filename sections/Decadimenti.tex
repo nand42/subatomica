@@ -102,12 +102,12 @@ si trova l'andamento del calore Q emesso/assorbito dalla reazione in funzione de
 
 \paragraph{esempio} si verifichi se l'Uranio $^{238}_{92}U$ possa decadere $\beta^-$
 \begin{equation}
-^{238}_{92}U \quad\longrightarrow\quad ^{238}_{92}U 
+^{238}_{92}U \quad\longrightarrow\quad ^{238}_{92}U + ^{238}_{93}U + e^- + \bar\nu_e
 \end{equation}
 ovvero ci si chiede se il calore della reazione è maggiore di zero
 \begin{equation}
 \begin{split}
-Q & = M(A,Z) - M(A,Z+1) > 0 \\
+Q & = M(A,Z) - M(A,Z+1) \quad\quad > 0 \quad ? \\
 & = -B(A,Z) + B(A,Z+1) + (M_H - M_n) \\
 & = -1807.5 + 1805 + (-0.78) = - \SI{3.28}{MeV} < 0
 \end{split}
@@ -122,7 +122,7 @@ Introduco la \emph{costante di decadimento} $\lambda$, che mi permette di riscri
 \begin{equation}
 \frac{dN}{dt} = - \lambda N
 \end{equation}
-questa è un'equazione differenziale risolvibile tramite separazione delle variabili
+questa è un'equazione differenziale risolvibile tramite separazione delle variabili, che descrive la probabilità che un atomo decada nell'unità di tempo
 \begin{equation}
 \begin{split}
 \frac{dN}{N} & = - \lambda dt \\
@@ -179,8 +179,7 @@ quanti decadimenti si hanno in un secondo?
 abbiamo in questo caso una precisione del $10\%$.
 
 Nei processi di decadimento molto rari si utilizza la statistica di Poisson.
-\paragraph{esempio} se ho $\Delta n$ al secondo che probabilità ho di registrare $K$ eventi? (se $\Delta n$ è piccolo, con bassa costante di decadimento)
-La probabilità in questo caso è data dalla statistica di Poisson
+\paragraph{esempio} se ho $\Delta n$ al secondo che probabilità ho di registrare $K$ eventi? (se $\Delta n$ è piccolo, con bassa costante di decadimento) la probabilità in questo caso è data dalla statistica di Poisson
 \begin{equation}
 P(\Delta n, K) = \frac{\Delta n^K}{K!} e^{ -\Delta n }
 \end{equation}
@@ -199,7 +198,7 @@ Normalmente i decadimenti avvengono in cascata e sono dominate da un sistema di 
 
 \paragraph{esempio} Un nucleo di Uranio che fa \emph{fissione} si divide in due nuclei che hanno circa la metà del numero di massa iniziale. I prodotti di fissione sono radioattivi perché il numero di neutroni è maggiore di quello della stabilità in quanto arrivano da un nucleo con un grande numero di massa.
 
-\subsection{Dose}
+\subsection{Dose di radioattività}
 Il numero di decadimenti al secondo viene chiamato \emph{attività di una sorgente} ed è espresso come 
 $$ A = \frac{dN}{dt} = \lambda N $$ 
 l'unità di misura è il \emph{Becuerel [Bq]} e corrisponde ad un decadimento al secondo
@@ -207,22 +206,67 @@ $$ \SI{1}{Bq} = \frac{1 \quad deca}{1 \quad s} $$
 un'unità di misura obsoleta ma ancora utilizzata è il \emph{Courie [Cu]}
 $$ \SI{1}{Cu} = \SI{3.7e10}{Bq} $$
 
-\paragraph{esempio} si calcoli l'attività di $\SI{1}{g}$ di $^{226}_{88} Ra_{138}$.
-Il Radio decade alpha con un tempo di dimezzamento di $T_{1/2} = \SI{1.602}{anni}$ e una vita media di $\tau_{Ra} = \SI{7.3e10}{s}$, l'attività è data da
+\paragraph{esempio} Si calcoli l'attività di $\SI{1}{g}$ di Radio $^{226}_{88} Ra_{138}$.
+Il Radio decade $\alpha$ con un tempo di dimezzamento di $T_{1/2} = \SI{1.602}{anni}$ e una vita media di $\tau_{Ra} = \SI{7.3e10}{s} \simeq \SI{2400}{anni}$ e la sua attività è data da
 \begin{equation}
 A = \frac{N_A}{\tau} = \frac{1}{226} \cdot \frac{\SI{6.02e23}{}}{\SI{7.3e10}{s}} = \SI{3.7e10}{s^{-1}}
 \end{equation}
 
+\subsubsection{Radioattività naturale}
+\paragraph{Corpo umano} Nel corpo umano sono presenti alcuni isotopi radioattivi, tra cui il Potassio [K] ed il Carbonio [C].
+L'isotopo radioattivo del Potassio è il $^{40}_{19}K$ ed è il residuo della formazione terrestre, per cui viene detto Potassio primordiale, un altro isotopo presente nel nostro corpo è il Carbonio $^{14}_{6}C$, che non ha origini primordiali ma si forma nell'alta atmosfera "per bombardamento", e decadono entrambi con un decadimento $\beta$.
+Il numero di decadimenti medi nel nostro corpo è pari a $\SI{3700}{Bq}$ e derivano dal $^{40}_{19}K$ e dal $^{14}_{6}C$.
+\paragraph{Suolo} L'attività del suolo è pari a $\SI{400}{Bq}$, dovuta dagli elementi $^{40}K$, $^{226}Ra$, $^{232}Th$, $^{238}U$.
+È importante il monitoraggio dell'attività del suolo e dell'ambiente naturale in quanto permette di avere dati di riferimento, anche nel caso di disastri come Chernobyl.
+
+\subsubsection{Dose assorbita}
+L'unità di misura internazionale che descrive la quantità di dose assorbita è il \emph{Gray} che equivale a
+$$ \SI{1}{Gy} = \SI{1}{J/Kg} $$
+inoltre ne esiste anche un'altra, ma obsoleta, il \emph{rad} che equivale a
+$$ \SI{1}{rad} = \SI{0.01}{Gy} = \SI{0.01}{J/Kg}$$
+se si parla di dose assorbita da un'entità biologica, da un tessuto ad esempio, quindi si parla di un danno biologico dovuto alla radiazione, si usa un'altra unità di misura: il \emph{Sievert} ovvero
+$$ \SI{1}{Sv} = \SI{1}{Gy} $$
+si parla infatti di \emph{dose equivalente} e l'unità di misura obsoleta utilizzata in precedenza è il \emph{rem} 
+$$ \SI{1}{rem} = \SI{0.01}{Sv} $$
+La dose assorbita dipende però dal tipo di tessuto, per questo si parla di dose equivalente.
+Tessuti diversi, o organi, esposti a simili radiazioni possono riportare danni biologici differenti.
+La dose assorbita va quindi associata al tipo di tessuto/organo colpito, per stabilire la gravità del danno.
+
+La dose naturale media annuale a cui è esposta in generale la popolazione varia nel range
+$$ \SI{1}{mSv} \leftrightarrow \SI{13}{mSv} $$
+a seconda della composizione geologica e strutturale del territorio di riferimento.
+
+\paragraph{Banane equivalenti} È detta \emph{Banana Equivalent Dose BED} ed è un'unità di misura della dose assorbita utilizzata spesso nel commercio.
+Deriva dal fatto che in una banana di $\SI{150}{g}$ ci sono circa $\SI{0.5}{g}$ di Potassio $K$ di cui una piccola parte è Potassio radioattivo: la frazione di $^{40}K$ è pari allo $0.0117\%$ e la vita media di questo isotopo è $T_{1/2} = \SI{1.2e9}{anni}=\SI{4e16}{s}$.
+
+Il nucleo del $^{40}_{19}K_{21}$ è composto da un numero dispari di neutroni (21) è quindi un nucleo \emph{dispari-dispari}, che significa che può decadere in nuclei stabili della curva di decadimento (?) in due modi diversi $\beta^+$ o $\beta^-$.
+% rifare disegno decadimento del Potassio in Argon 
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.6]{/decadimento_potassio}
+\caption{FIGURA DA RIFARE PDF. Decadimento del Potassio-40}
+\end{figure}
+
+Qual è l'attività di $\SI{1}{g}$ di $K$ naturale?
+In un grammo ci sono $N_K = \frac{\SI{1}{g}}{40} \cdot \SI{6.023e23}{} = \SI{1.5e22}{atomi}$ di cui di Potassio-40 
+$ N_{^{40}K} = \SI{1.5e22}{} \cdot \SI{1.2e-4}{} = \SI{1.8e18}{atomi} $.
+L'attività di $\SI{1}{g}$ di Potassio naturale è pari a
+\begin{equation}
+A = \frac{dN}{dt} = \lambda N = \frac{\ln 2}{T_{1/2}} = \frac{0.693}{\SI{4e16}{}} = \SI{1.8e18}{} = \SI{31}{Bq}
+\end{equation}
+in una persona adulta ci sono $\SI{2.5}{g/kg}$ di Potassio, per cui in una persona di $\SI{75}{kg}$ ci sono $\SI{187.5}{g}$ di Potassio e quindi, rispetto al conto precedente, l'attività totale equivale a circa $\SI{5800}{Bq}$.
+È da notare che nel corpo umano esistono meccanismi di recupero di questi decadimenti, le cellule sono abituate a recuperare da questo grado di danneggiamento biologico.
 
 
+\subsubsection{Quantificare danni di eventi disastrosi}
+Si quantificano i danni di eventi disastrosi come quelli di Chernobyl facendo una media sulla popolazione.
+Noto che una dose di $\SI{1}{Gy}$ è una dose mortale per una persona.
+Sapendo la quantità totale di radiazione emessa nell'evento è possibile "dividerla" rispetto alla popolazione per trovarne una media.
+Quindi per esempio una dose di $\SI{1}{Gy}$ divisa per $\SI{1000}{persone}$, 1 persona su mille muore per radiazione.
 
+Una dose letale di radiazione espressa in Banane Equivalenti è $\SI{80e6}{BED}$ (lol).
 
-
-
-
-
-
-
+Dormendo a fianco di una persona si è esposti ad una dose di $\SI{0.5}{BED}$.
 
 
 
