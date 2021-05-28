@@ -243,8 +243,8 @@ Il nucleo del $^{40}_{19}K_{21}$ è composto da un numero dispari di neutroni (2
 % rifare disegno decadimento del Potassio in Argon 
 \begin{figure}[h]
 \centering
-\includegraphics[scale=0.6]{/decadimento_potassio}
-\caption{FIGURA DA RIFARE PDF. Decadimento del Potassio-40}
+\includegraphics[scale=1.5]{/decadimento_potassio_banane_equivalenti}
+\caption{Decadimento del Potassio-40}
 \end{figure}
 
 Qual è l'attività di $\SI{1}{g}$ di $K$ naturale?
@@ -267,6 +267,69 @@ Quindi per esempio una dose di $\SI{1}{Gy}$ divisa per $\SI{1000}{persone}$, 1 p
 Una dose letale di radiazione espressa in Banane Equivalenti è $\SI{80e6}{BED}$ (lol).
 
 Dormendo a fianco di una persona si è esposti ad una dose di $\SI{0.5}{BED}$.
+
+
+\subsection{Decadimento $\alpha$}
+Nel 1909 Rutherford studia con l'utilizzo di una \emph{camera a nebbia}, uno dei primi rivelatori di particelle, il decadimento nel vuoto di materiale radioattivo e osserva che viene "prodotto" $He$, che osservò come tracce bianche lasciate dal passaggio delle particelle.
+Il decadimento $\alpha$ si generalizza come segue
+\begin{equation}
+\label{decadimento_alpha}
+^{A}_{Z}X \quad\rightarrow\quad ^{A-4}_{Z-2}Y + ^{4}_{2}He \quad \Bigl[  + Q  \Bigr]
+\end{equation}
+in cui il termine $Q$ rappresenta l'energia rilasciata sotto forma di calore.
+L'energetica (si chiama così?) del decadimento si calcola, attraverso la solita formula semi-empirica di massa, 
+\begin{equation}
+Q = M(A,Z) - M(A-4,Z-2) - M_{\alpha}(4,2) = BE(Z-2,A-4) + B_{\alpha} - B(Z,A)
+\end{equation}
+Se si analizza l'andamento di questa energia in funzione del numero di massa, utilizzando un programma apposito, si trova un andamento del tipo
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.6]{/q_a_alpha}
+\caption{CAPTION}
+\end{figure}
+Il \emph{nucleo di soglia} dal quale il decadimento ha $Q > 0$ corrisponde al numero atomico $A = 150$, quindi gli elementi dal $6^o$ periodo in poi possono decadere $\alpha$, salvo eccezioni come ad esempio l'oro $^{197}_{79}Au$ per il quale nonostante l'energetica sia favorevole al decadimento tale elemento decade con tempi lunghi, più lunghi della vita dell'universo.
+
+\paragraph{Fenomenologia del decadimento alpha} Rappresentando il tempo di decadimento $T_{1/2}$ in funzione dell'energia delle particelle emesse $E_{\alpha}$ si nota una relazione inversa tra le due grandezze, più precisamente data da
+\begin{equation}
+T_{1/2} \propto \frac{1}{\sqrt{E_{\alpha}}}
+\end{equation}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.6]{/prop_vitamedia_energiaalpha}
+\caption{CAPTION}
+\end{figure}
+La \emph{legge di Geiger Nuttal} lega la grandezza teorica della \emph{probabilità di decadimento} con le grandezze sperimentalmente misurabili come la \emph{vita media} o il \emph{tempo di dimezzamento}
+\begin{equation}
+\ln \Bigl(  \frac{1}{\tau}  \Bigr) = a - b \frac{Z}{\sqrt{E_{\alpha}}}
+\end{equation}
+tale legge ha una validità di $20$ ordini di grandezza, che fa intuire vi siano effetti relativistici che la regolano.
+
+Esistono quattro catene di decadimento alpha molto importanti:
+\begin{enumerate}
+\item Serie dell'Uranio $^{238}U$ che ha un tempo di vita medio di  $T_{1/2}=\SI{4.5e9}{anni}$ e decade in Piombo $^{206}_{82}Pb$
+
+\item Serie dell'Uranio $^{235}U$ che ha un tempo di vita medio di  $T_{1/2}=\SI{7e8}{anni}$ e decade in Piombo $^{207}_{82}Pb$
+
+\item Serie del Torio $^{232}_{90}Th$ che ha un tempo di vita medio di  $T_{1/2}=\SI{1.4e10}{anni}$ e decade in Piombo $^{208}_{82}Pb$
+
+\item Serie del Nettunio $^{237}_{93}Np$ che ha un tempo di vita medio di  $T_{1/2}=\SI{2.2e6}{anni}$ e decade in Bismuto $^{209}_{83}Bi$
+\end{enumerate}
+Le catene di decadimento vengono utilizzate, tra le altre cose, per le datazioni.
+Le precedenti quattro ed il decadimento del Potassio-40 e del Carbonio-14 sono le uniche reazioni di decadimento naturali ancora presenti sulla Terra.
+\begin{figure}[h]
+\centering
+\includegraphics[scale=1.6]{/serie_decadimenti_alpha}
+\caption{Serie di decadimenti nucleari dell'Uranio-235 e dell'Uranio-238}
+\end{figure}
+
+
+
+
+
+
+
+
+
 
 
 
