@@ -306,9 +306,9 @@ tale legge ha una validità di $20$ ordini di grandezza, che fa intuire vi siano
 
 Esistono quattro catene di decadimento alpha molto importanti:
 \begin{enumerate}
-\item Serie dell'Uranio $^{238}U$ che ha un tempo di vita medio di  $T_{1/2}=\SI{4.5e9}{anni}$ e decade in Piombo $^{206}_{82}Pb$
+\item Serie dell'Uranio (o del radio) $^{238}U$ che ha un tempo di vita medio di  $T_{1/2}=\SI{4.5e9}{anni}$ e decade in Piombo $^{206}_{82}Pb$
 
-\item Serie dell'Uranio $^{235}U$ che ha un tempo di vita medio di  $T_{1/2}=\SI{7e8}{anni}$ e decade in Piombo $^{207}_{82}Pb$
+\item Serie dell'Attino $^{235}U$ che ha un tempo di vita medio di  $T_{1/2}=\SI{7e8}{anni}$ e decade in Piombo $^{207}_{82}Pb$
 
 \item Serie del Torio $^{232}_{90}Th$ che ha un tempo di vita medio di  $T_{1/2}=\SI{1.4e10}{anni}$ e decade in Piombo $^{208}_{82}Pb$
 
@@ -319,8 +319,113 @@ Le precedenti quattro ed il decadimento del Potassio-40 e del Carbonio-14 sono l
 \begin{figure}[h]
 \centering
 \includegraphics[scale=1.6]{/serie_decadimenti_alpha}
-\caption{Serie di decadimenti nucleari dell'Uranio-235 e dell'Uranio-238}
+\caption{Serie di decadimenti nucleari dell'Uranio-235 e dell'Uranio-238, in cui si alternano decadimenti $\alpha$ e $\beta$}
 \end{figure}
+
+Studiamo il decadimento di un nucleo padre $X$ che decade in un nucleo figlio $Y$ più una particella $\alpha$ ed energia $Q$
+\begin{equation}
+^{A}_{Z}X \quad\rightarrow\quad ^{A-4}_{Z-2}Y + ^{4}_{2}He + Q
+\end{equation}
+se inizialmente l'atomo $X$ è a riposo, per la conservazione della quantità di moto, i figli di questa reazione si allontaneranno in direzioni opposte.
+La conservazione della quantità di moto si esprime come 
+\begin{equation}
+p_Y = p_{\alpha} = p
+\end{equation}
+L'energia liberata nella reazione è divisa tra l'energia cinetica del nucleo figlio e dalla particella $\alpha$, per cui usando la meccanica classica otteniamo
+\begin{equation}
+Q = \frac{p_Y^2}{2m_Y} + \frac{p_{\alpha}^2}{2m_{\alpha}} 
+= \frac{p^2}{2} \Bigl(  \frac{1}{m_Y}  + \frac{1}{m_{\alpha}}\Bigr)
+= \frac{p^2}{2} \Bigl(  \frac{m_Y + m_{\alpha}}{m_Y m_{\alpha}} \Bigr)
+\end{equation}
+da cui si estrae $p^2$
+\begin{equation}
+p^2 = 2 Q \Bigl(  \frac{m_Y m_{\alpha}}{m_Y + m_{\alpha}} \Bigr)
+\end{equation}
+da cui si trova come si distribuisce l'energia cinetica nella reazione, l'energia cinetica della particella $\alpha$ è
+\begin{equation}
+K_{\alpha} = \frac{p^2}{2m_{\alpha}} = Q \frac{m_Y}{m_Y + m_{\alpha}}
+\end{equation}
+e.g. per un atomo che decade alpha con un numero di massa $A = 200$, sapendo che $A_{\alpha} = 4$ si trova
+\begin{equation}
+K_{\alpha} = Q \frac{196}{200} \simeq 98\% Q
+\end{equation}
+e quindi praticamente tutta l'energia cinetica viene trasferita alla particella, mentre solo un $2\%$ dell'energia cinetica viene trasferita all'atomo figlio.
+Ha senso quindi approssimare dicendo che l'energia rilasciata nella reazione equivale (circa) all'energia cinetica della particella alpha e quindi si può scrivere $K_{\alpha} = Q$.
+
+\paragraph{nota} se nel decadimento (a due corpi) fosse emesso un elettrone allora l'energia cinetica dell'elettrone sarebbe $K_e = 0.999 Q$
+
+\subsubsection{Cos'è il decadimento $\alpha$}
+In un nucleo con massa atomica sufficientemente alta c'è una probabilità non nulla che si formi una particella $\alpha$, un nucleo di Elio, al suo interno, questa particella iniziando a rimbalzare all'interno del nucleo arriverà sulle "pareti".
+Il potenziale nucleare è composto da una buca di potenziale che oltre il confine decresce esponenzialmente, l'energia della particella alpha equivale a $E_{\alpha} = \SI{28}{MeV}$.
+L'emissione diretta di protoni e neutroni non è possibile in quanto la loro energia $E= 7-\SI{8}{MeV}$ si trova al disotto del livello zero dell'energia e sono intrappolati all'interno.
+\begin{figure}[h]
+\centering
+\includegraphics[scale=2]{/alpha_decad_potenziale}
+\caption{CAPTION}
+\end{figure}
+Se i protoni ed i neutroni si combinano insieme in una particella $\alpha$, particella molto stabile, viene emessa un'energia maggiore del livello zero, per cui è inizialmente intrappolata nella buca di potenziale ma ha una probabilità di uscire dalla buca diversa da zero.
+Ovviamente solo per effetti quantistici la particella potrà attraversare la regione di potenziale maggiore dell'energia $E_{\alpha}$, classicamente il decadimento $\alpha$ non è possibile o spiegabile.
+
+Cerco qual è la barriera di potenziale che la particella deve superare.
+Chiamando $r_1$ la distanza in cui si trova il picco più alto di potenziale, quindi sulla superficie del nucleo, e.g. calcolato per l'Uranio-238 trovo
+\begin{equation}
+\begin{split}
+r_1 & = 1.2 ( 234^{1/3} + 4^{1/3} ) = \SI{9.3}{fm} \\
+V_1 & = \frac{ Z_Y \cdot Z_{He} e^2}{4 \pi \varepsilon_0 r_1} = \frac{ 90 \cdot 2 e^2}{4 \pi \varepsilon_0 r_1} = \frac{180 e^2 \hbar c }{4 \pi \varepsilon_0 \hbar c r_1} = \frac{180 \cdot \SI{1.44 }{MeV fm}}{ \SI{9.3}{fm} } =  \SI{27.8}{MeV} 
+\end{split}
+\end{equation}
+La particella $\alpha$ pur avendo energia positiva è inferiore al valore del potenziale, poiché è dell'ordine di qualche $MeV$. 
+
+Cerco ora la distanza che la particella deve percorrere per \emph{effetto tunnel} fino al punto $r_2$ in cui l'energia del potenziale è uguale all'energia della particella $\alpha$.
+Per questo conto teniamo ancora in considerazione l'Uranio, l'energia della reazione equivale ad $E_{\alpha} = Q = \SI{4.2}{MeV}$ ed eguagliandolo al potenziale dell'atomo si ricava
+\begin{equation}
+\begin{split}
+& Q = V = \frac{1}{4 \pi \varepsilon_0} \frac{90\cdot2}{r_2} \\
+& r_2 = \frac{180 \cdot \SI{1.44}{MeV fm}}{\SI{4.2}{MeV}} = \SI{61.7}{fm}
+\end{split}
+\end{equation}
+La barriera che la particella deve attraversare è molto profonda e non è per questo molto probabile che succeda.
+
+
+\subsubsection{Teoria di Gamov del decadimento $\alpha$}
+La vita media del decadimento è inversamente proporzionale alla probabilità
+\begin{equation}
+\tau = \frac{1}{\lambda}
+\end{equation}
+il tempo di decadimento è un parametro fenomenologico, sperimentale, mentre la probabilità di decadimento si ricava dalla teoria.
+Secondo la \emph{teoria di Gamov} la probabilità di decadimento è data da tre contributi:
+\begin{equation}
+\lambda = p_{\alpha} f P
+\end{equation}
+in cui
+\begin{itemize}
+\item $p_{\alpha}$ è la \emph{probabilità che si formi una particella $\alpha$}
+
+\item $f$ è la \emph{frequenza di collisione} tra la particella $\alpha$ e gli altri nucleoni nel nucleo ovvero posta $v_{\alpha}]$ la velocità della particella nel nucleo ed $r_1$ la dimensione del nucleo, si ha 
+\begin{equation}
+\begin{split}
+& f = \frac{v_{\alpha}}{2 r_1} \\
+& v_{\alpha} = \sqrt{ 2\frac{V_0 + Q}{m_{\alpha}} } \simeq \sqrt{ 2\frac{\SI{35}{MeV} + \SI{5}{MeV}}{\SI{3700}{MeV/c^2}} } \simeq \SI{0.14}{c} = \SI{0.42e8}{m/s}
+\end{split}
+\end{equation}
+considerando ad esempio un nucleo con $A=200$ e raggio $R = \SI{7.0}{fm}$, si trova una frequenza di $f = \SI{6e21}{Hz}$, quindi molto alta
+
+\item mentre il parametro $P$ è legato alla \emph{probabilità di attraversamento della barriera di potenziale}, per il quale è necessario applicare l'equazione di Schrodinger indipendente dal tempo.
+Considero il potenziale nella zona 2, in cui decresce da $r_1$ a $r_2$.
+Data l'equazione di Schrodinger
+\begin{equation}
+\begin{split}
+& -\frac{\hbar^2}{2m} \frac{d^2 \psi}{dx^2} V \psi = E \psi \quad\Rightarrow\quad 
+\frac{d^2\psi}{dx^2} = - \frac{2m}{\hbar^2} (E-V)\psi = -\frac{2m}{\hbar^2} (Q-V_c)\psi \\
+& K^2 =  -\frac{2m}{\hbar^2} (Q-V_c) \quad > 0 \\
+&  \frac{d^2\psi}{dx^2} = K^2 \psi \quad\Rightarrow\quad \psi = \cancel{A e^{+ K x}} + Be^{- K x}
+\end{split}
+\end{equation}
+si trova la funzione d'onda $\psi$ che descrive la particella nella zona classicamente proibita.
+Il termine $P$
+
+
+\end{itemize}
 
 
 
