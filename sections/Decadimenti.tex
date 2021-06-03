@@ -415,26 +415,108 @@ Considero il potenziale nella zona 2, in cui decresce da $r_1$ a $r_2$.
 Data l'equazione di Schrodinger
 \begin{equation}
 \begin{split}
-& -\frac{\hbar^2}{2m} \frac{d^2 \psi}{dx^2} V \psi = E \psi \quad\Rightarrow\quad 
-\frac{d^2\psi}{dx^2} = - \frac{2m}{\hbar^2} (E-V)\psi = -\frac{2m}{\hbar^2} (Q-V_c)\psi \\
-& K^2 =  -\frac{2m}{\hbar^2} (Q-V_c) \quad > 0 \\
+-\frac{\hbar^2}{2m} \frac{d^2 \psi}{dx^2} V \psi = E \psi \quad\Rightarrow\quad 
+& \frac{d^2\psi}{dx^2} = - \frac{2m}{\hbar^2} (E-V)\psi = -\frac{2m}{\hbar^2} (Q-V_c)\psi \\
+K^2 =  -\frac{2m}{\hbar^2} (Q-V_c) \quad > 0 & \\
 &  \frac{d^2\psi}{dx^2} = K^2 \psi \quad\Rightarrow\quad \psi = \cancel{A e^{+ K x}} + Be^{- K x}
 \end{split}
 \end{equation}
 si trova la funzione d'onda $\psi$ che descrive la particella nella zona classicamente proibita.
-Il termine $P$
-
-
+Il valore di $K^2$ trovato nella formula precedente è sempre positivo ed è l'argomento dell'esponenziale.
+Se $Q \ll V_c$ mi aspetto che l'esponenziale abbia un andamento molto rapido di decadimento, se invece $Q \sim V_c$ il decadimento esponenziale è molto più lento, vedi figura \ref{decad_q_Vc}.
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.7]{/esp_Q_Vc}
+\caption{dipendenza tra il decadimento e l'energia}
+\label{decad_q_Vc}
+\end{figure}
+Esiste quindi una grande dipendenza tra la vita media ed il gradino di potenziale da dover superare e quindi dall'energia emessa dalla reazione.
 \end{itemize}
 
+\paragraph{Calcolo del potenziale da attraversare con effetto tunnel}
+Il potenziale $V$ è composto da due zone distinte, la prima tra lo zero ed il valore $R$ del raggio del nucleo il potenziale è costituito da una buca $V=V_0$, mentre la seconda zona, da $R$ in poi, è dato dal potenziale coulombiano $V=V_c(r)$, per cui 
+\begin{equation}
+V(r) =
+\Bigg\{\begin{array}{l}
+\mbox{se}\quad r \in [ 0, R ] \quad\Rightarrow\quad  V_0  \\
+\mbox{se}\quad r \in [ R, \infty [ \quad\Rightarrow\quad \frac{2(Z-2)e^2}{4 \pi \varepsilon_0} \frac{1}{r} 
+\end{array}
+\end{equation}
+Il parametro $K$ è ciò che dobbiamo considerare per lo studio dell'andamento della probabilità $e^{-2 G}$
+\begin{equation}
+K(r) = \sqrt{ \frac{2m}{\hbar^2} \Bigl(  V_c(r) -Q \Bigr) } = \sqrt{ \frac{2m}{\hbar^2} \frac{2(Z-2)e^2}{4 \pi \varepsilon_0} \Bigl(  \frac{1}{r} - \frac{1}{b}  \Bigr) } 
+\end{equation}
+per cui lo integriamo tra $R$ e $b$, in cui il potenziale vale $V_c(b) = \frac{2(Z-2)e^2}{4 \pi \varepsilon_0} \frac{1}{b}$, per ottenere il primo risultato del fattore di Gamov $G$
+\begin{equation}
+\begin{split}
+G & = \sqrt{ \frac{2m}{\hbar^2} \frac{2(Z-2)e^2}{4 \pi \varepsilon_0} } \int_R^{b} \sqrt{ \frac{1}{r} - \frac{1}{b}  } dr \\
+& \mbox{sostituisco} \quad r = b \sin^2 \theta \quad\Rightarrow\quad dr = 2b \sin \theta \cos \theta d\theta \\
+& = \sqrt{ \frac{2m}{\hbar^2} \frac{2(Z-2)e^2}{4 \pi \varepsilon_0} } \int_{\sin^{-1}\sqrt{\frac{R}{b}}}^{\pi/2} 2 \sqrt{b} \cos^2 \theta d\theta \\ 
+& = \sqrt{ \frac{2m}{\hbar^2} \frac{2(Z-2)e^2}{4 \pi \varepsilon_0} } \sqrt{b} \int_{\sin^{-1}\sqrt{\frac{R}{b}}}^{\pi/2} \Bigl(  1 + \cos(2\theta)  \Bigr) d\theta \\
+& = \sqrt{ \frac{2m}{\hbar^2} \frac{2(Z-2)e^2}{4 \pi \varepsilon_0} } \sqrt{b} \Bigl[  \theta + \frac{1}{2}\sin(2\theta)  \Bigr]_{\sin^{-1}\sqrt{\frac{R}{b}}}^{\pi/2} \\
+& =\sqrt{ \frac{2m}{\hbar^2} \frac{2(Z-2)e^2}{4 \pi \varepsilon_0} } \sqrt{b} \Bigl[  \cos^{-1}\sqrt{\frac{R}{b}} - \sqrt{\frac{R}{b}\Bigl(  1- \frac{R}{b}   \Bigr)} \Bigr]
+\end{split}
+\end{equation}
+Esplicitiamo ora i termini $R, b$
+\begin{equation}
+\begin{split}
+& B = \frac{2 (Z-2) e^2}{4 \pi \varepsilon_0 R} \quad\Rightarrow\quad R = \frac{2 (Z-2) e^2}{4 \pi \varepsilon_0 B} \\
+& Q_{\alpha} = \frac{2 (Z-2) e^2}{4 \pi \varepsilon_0 b} \quad\Rightarrow\quad b = \frac{2 (Z-2) e^2}{4 \pi \varepsilon_0 Q_{\alpha}} 
+\end{split}
+\end{equation}
+e riscriviamo il fattore di Gamov
+\begin{equation}
+\begin{split}
+G &= \frac{2 (Z-2) e^2}{4 \pi \varepsilon_0 \hbar} \sqrt{\frac{2m}{Q_{\alpha}}} \Bigl[  \cos^{-1}\sqrt{\frac{Q_{\alpha}}{B}} - \sqrt{\frac{Q_{\alpha}}{B} \Bigl(  1 - \frac{Q_{\alpha}}{B}  \Bigr)}  \Bigr] \\
+& \quad\quad x=\frac{Q_{\alpha}}{B} \quad\mbox{per $x$ piccoli}\quad \cos^{-1}x \sim \frac{\pi}{2} - x \\
+& = \frac{2 (Z-2) e^2}{4 \pi \varepsilon_0 \hbar} \sqrt{\frac{2m}{Q_{\alpha}}} \Bigl[  \frac{\pi}{2} - 2 \sqrt{\frac{Q_{\alpha}}{B}}  \Bigr]
+\end{split}
+\end{equation}
+il potenziale a raggio $R$ vale $B$, ovvero
+\begin{equation}
+V(R) = B = \frac{2 (Z-2) e^2}{4 \pi \varepsilon_0 R} = \frac{2 Z_d e^2}{4 \pi \varepsilon_0 R}
+\end{equation}
+dove $Z_d$ è il numero di protoni del nucleo figlio.
+La probabilità di attraversamento per effetto tunnel è
+\begin{equation}
+\begin{split}
+P = e^{-2 G} \quad\Rightarrow\quad \ln P &= -2 G \\
+& = -\frac{e^2}{\varepsilon_0 \hbar} \sqrt{\frac{m}{2}} Z_d \frac{1}{\sqrt{Q_{\alpha}}} + \frac{4 e}{\hbar} \sqrt{\frac{m}{\pi \varepsilon_0}} \sqrt{Z_d} \sqrt{R} \\ 
+& \quad\mbox{sostituendo}\quad R = R_0 A^{1/3} \\
+log_{10} P = & 1.42 \sqrt{Z_d A^{1/3}} - 1.72 \frac{Z_d}{\sqrt{Q_{\alpha}}}
+\end{split}
+\end{equation}
+il primo termine è pressoché costante, mentre è il secondo termine ad avere l'impatto maggiore.
 
+\subsubsection{Applicazione del decadimento $\alpha$}
+\paragraph{Generatore elettrico}
+Il rover \emph{Perserverance} mandato su Marte viene alimentato grazie a delle sorgenti $\alpha$, il Plutonio-238.
+Il $^{238}Pu$ ha un tempo di dimezzamento $T_{1/2} \simeq \SI{88}{y}$ ed il decadimento produce calore che per \emph{Effetto Seebeck} viene convertito in elettricità.
 
+Calcoliamo l'energia rilasciata da $\SI{238}{g}$ di $^{238}Pu$, quindi l'attività $A$ è
+\begin{equation}
+\begin{split}
+A & = N_0 \lambda = \frac{\SI{238}{g}}{238} \SI{6.023e23}{} \frac{0.693}{90 \cdot 365 \cdot 25 \cdot 3600} \\
+& \SI{1.5e14}{\frac{decadimenti}{s}}
+\end{split}
+\end{equation}
+l'energia della singola particella $\alpha$ è
+\begin{equation}
+Q_{\alpha} = E_{\alpha} \Bigl(  \frac{M_{\alpha}+M_d}{M_{\alpha} M_d}  \Bigr) = \SI{5.6}{MeV}
+\end{equation}
+e l'energia totale rilasciata è 
+\begin{equation}
+E = A \cdot Q_{\alpha} = \SI{1.5e14}{s^{-1}} \SI{5.6}{MeV} = \SI{e14}{MeV/s} \cdot \SI{1.6e-19}{MeV} = \SI{1.4e2}{W}
+\end{equation}
+questa grandezza esprime $joule$ termici rilasciati, quelli poi convertiti in elettricità saranno solo una frazione di questi, ma l'efficienza di conversione è abbastanza bassa per questo tipo di generatore e servono alcuni $kg$ di Plutonio per renderli utilizzabili.
+   
+\paragraph{Datazione della Terra} 
+Sfruttiamo il processo di decadimento dell'Uranio-238 in Piombo-206. 
+Le pietre più antiche sulla terra sono gli \emph{zirconi}, esse preservano al loro interno i composti chimici salvaguardandoli da alterazioni geologiche, chimiche e nel tempo. 
+Analizzando la composizione chimica interna di uno zircone e cercando le quantità di Uranio-238 e di Piombo-206 è possibile risalire ad una età di tale zircone; in quanto si ipotizza (e si conosce) che il Piombo deriva unicamente dal decadimento dell'Uranio.
 
-
-
-
-
-
+Anche i \emph{meteoriti} forniscono molte informazioni sull'età della Terra, essi sono "capsule del tempo" che ci permettono di osservare la composizione del sistema solare al momento della sua formazione e quindi di fare un paragone con i composti presenti oggi sulla Terra.
+Al contrario, la Terra è sempre in cambiamento, quindi non è facile trovare campioni antichi quanto la formazione su di essa.
 
 
 
