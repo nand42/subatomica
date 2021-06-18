@@ -1,3 +1,5 @@
+%Umberto Zarantonello 17-06-21
+
 \section{Modello Standard}
 La lagrangiana del modello standard è una formula che riassume in poche righe la descrizione attuale di tutte le interazioni.
 \begin{equation}
@@ -618,5 +620,366 @@ Ad un $X$ basso aumenta il numero di particelle che si distribuiscono tra di lor
 Questa in pratica è un'evidenza sperimentale dell'esistenza dei gluoni, questi infatti possono essere visti solo indirettamente in quanto non portano carica elettrica e quindi risultano invisibili altrimenti.
 Possiamo quindi intuire che se $x$ aumenta o diminuisce il numero di particelle varia.
 
+%nuova sezione-------------------------------------------------------
+\subsection{Interazione debole}
+L'interazione si chiama debole perché si manifesta in modo meno intenso della forza elettromagnetica e della forza forte.
+Questo per esempio si può esprimere nella sezione d'urto.
+Mentre nel caso della sezione d'urto della forza forte tra due protoni si ha un valore di
+\begin{equation}
+\sigma_{forte}(E>10GeV)\sim 50mb
+\end{equation}
+e nel caso della forza elettromagnetica si ha una sezione d'urto che può virtualmente essere considerata infinita (interazione a range infinito) ma che anche andando a vedere fino a quando ci sono effetti elettromagnetici ravvisabili ha un valore di 
+\begin{equation}
+\sigma_{el-mag}\sim 10mb
+\end{equation}
+la sezione d'urto di forza debole, è molto più piccola; prendendo per esempio un neutrino di energia $1MeV$, la sezione d'urto avrà un valore di 
+\begin{equation}
+\sigma_{debole}\sim 10^{-44}cm^2\sim 10^{-20}b
+\end{equation}
+Un altro parametro di "debolezza" di questa forza è la vita media delle particelle che decadono per interazione debole.
+Uno stato che decade per interazione forte ha vita media pari a
+\begin{equation}
+\tau_{forte}\leq 10^{-20}s
+\end{equation}
+uno stato che decade per interazione elettromagnetica
+\begin{equation}
+10^{-12}s\leq \tau_{el-mag}\leq 10^{-20}s
+\end{equation}
+invece un decadimento di uno stato per interazione debole ha un tempo 
+\begin{equation}
+\tau_{debole} \geq 10^{-12}s
+\end{equation}
+
+Si è visto poi che la forza debole non è da considerarsi debole a causa della stessa interazione, infatti nell'interpretazione delle moderne teorie quantistiche di campo i bosoni vettori della forza debole sono stati visti essere estremamente massivi ed è questo che porta ad un "indebolimento" della forza; questo può essere portato all'estremo tanto che c'è una teoria che va ad unificare forza debole ed elettromagnetismo.
+
+\paragraph{Universalità dell'interazione debole}
+Una delle peculiarità dell'interazione debole è quella che si chiama \emph{universalità}.
+L'interazione debole può avvenire in varie modalità diverse:
+
+\begin{itemize}
+\item \emph{Processi leptonici}; sono i processi che coinvolgono solamente leptoni.
+Per esempio si è visto che ci sono due "cugini" pesanti dell'elettrone, il muone $\mu^-$ e il leptone $\tau$.
+Il muone essendo più pesante dell'elettrone decade (con una vita media di $2\mu s$)
+\begin{equation}
+\mu^-\to e^-+\bar{\nu_e}+\nu_\mu
+\end{equation}
+Questa è una reazione che rispetta tutte le leggi di conservazione infatti è conservato anche il numero leptonico.
+Inoltre la reazione, che Fermi considerava di contatto, si è visto che è in realtà mediata da un bosone vettore $W^-$ che decade nell'elettrone e nell'antineutrino elettronico.
+\begin{figure}[h]
+\centering
+\includegraphics[width=150pt]{fig9_17}
+\caption{Decadimento del muone}
+\end{figure}
+
+\item \emph{Processi semi-leptonici} che vanno a coinvolgere sia quark che leptoni.
+Un esempio può essere il decadimento di un neutrone in un protone, che di base ha una dinamica del tutto simile al decadimento del muone ma con il coinvolgimento di due adroni.
+Il processo può poi essere rivisto considerando l'interazione come un decadimento di un singolo quark all'interno del neutrone.
+\begin{figure}[h]
+\centering
+\includegraphics[width=300pt]{fig9_16}
+\caption{Decadimento del neutrone}
+\end{figure}
+Un altro processo semi-leptonico è il decadimento del pione negativo
+\begin{equation}
+\pi^-\to \mu_\nu+\bar{\nu_\nu}
+\end{equation} 
+Il diagramma di Feynman di questo fenomeno è simile a quelli già visti.
+C'è un altro mesone che decade così è il caone $K^+$.
+
+\item \emph{Processi non leptonici} che coinvolgono solamente quark.
+Un processo di questo tipo è un decadimento secondario del caone $K^+$
+\begin{equation}
+K^+\to \pi^++\pi^0
+\end{equation}
+\end{itemize}
+
+\paragraph{Matrice d'interazione}
+I diagrammi di Feynman non sono solo molto utili per lo scopo divulgativo ma danno anche un grande aiuto per quel che riguarda la scrittura delle matrici di interazione.
+Si prenda come esempio il decadimento del muone $mu^+$
+\begin{figure}[h]
+\centering
+\includegraphics[width=150pt]{fig9_18}
+\end{figure}
+
+La matrice d'interazione tra lo stato iniziale e finale del processo sarà proporzionale a 
+\begin{equation}
+M_{i-f}\propto g\cdot \frac{1}{Q^2c^2+M^2_Wc^4}\cdot g
+\end{equation}
+dove $g$ è un fattore che tiene conto dell'intensità della reazione, considerato ai vertici dell'interazione; la frazione centrale è chiamata propagatore; $M^2_W$ è la massa della particella scambiata; $Q^2$ è il solito fattore di momento trasferito.
+
+Se si considera ora l'approssimazione a bassi momenti trasferiti ($Q^2\to 0$) si ottiene
+\begin{equation}
+M_{i-f}\propto \frac{g^2}{M^2_Wc^4}
+\end{equation}
+$g^2$ è l'intensità, molto simile alla costante di struttura fine, infatti la costante di struttura debole si avvicina molto alla costante di interazione elettromagnetica ma il motivo per cui si vede la forza debole "debole" è a causa del termine $M^2_W$.
+
+\paragraph{Matrice CKM: interazione debole tra i quark}
+La matrice di Cabibbo-Kobayashi-Maskawa, è una matrice che descrive l'interazione debole tra i quark.
+L'interazione debole è stata definita come universale, quello che si è però visto sperimentalmente è che la probabilità che un quark $up$ si trasformasse in un quark $down$ era molto diversa dalla probabilità che diventasse un quark $s$, questo genera delle problematiche legate al fatto che il tipo di interazione deve essere la stessa se si parla di un'interazione universale.
+L'intuizione che risolse la questione fu teorizzata da Cabibbo e postula che gli autostati dell'interazione debole possano non essere gli stessi della massa, quindi che quando una particella è libera rimane se stessa, per esempio un quark $up$ rimane un quark $up$ con una certa massa ed un certo tipo di caratteristiche, quando però questa interagisce tramite interazione debole cambia la sua natura, in questo caso quindi un quark $up$ può decadere in una combinazione di quark $down$ e quark $s$.
+Si ha quindi una rotazione dell'autostato della massa, il quark $up$ decade in una composizione data da
+\begin{equation}
+u\longrightarrow \cos\theta_C d+\sin\theta_C s
+\end{equation}
+dove $\theta_C$ è chiamato \emph{angolo di Cabibbo}.
+Volendo quindi rappresentare gli stati dell'interazione debole ciò che si ottiene è rappresentata in figura
+\begin{figure}[h]
+\centering
+\includegraphics[width=180pt]{fig9_18}
+\caption{Autostati ruotati dell'interazione debole}
+\end{figure}
+In altre parole non è detto che ciò che interagisce tramite questa forza corrisponda esattamente alla massa.
+Si prendano ora le matrici di interazione, già viste in precedenza
+\begin{equation}
+\begin{pmatrix}
+u\\d
+\end{pmatrix}
+\hspace{0.5cm}
+\begin{pmatrix}
+e\\s
+\end{pmatrix}
+\hspace{0.5cm}
+\begin{pmatrix}
+t\\b
+\end{pmatrix}
+\end{equation}
+
+La combinazione di quark che interagiscono debole viene data, in termini matriciali, dalla formula (dove per convenzione si ruotano sempre i quark con carica $-1/3$)
+\begin{equation}
+\begin{bmatrix}
+d'\\s'
+\end{bmatrix}
+=\begin{bmatrix}
+\cos\theta_C&\sin\theta_C\\
+-\sin\theta_C&\cos\theta_C
+\end{bmatrix}
+\begin{bmatrix}
+d\\s
+\end{bmatrix}
+\end{equation}
 
 
+Con questo tipo di intervento si è salvata l'universalità dell'interazione debole, viene infatti spiegato il motivo per cui la probabilità, anche per piccoli angoli di Cabibbo, è più alta verso il quark $d$ rispetto al quark $s$
+Anche se potrebbe sembrare un artificio matematico in realtà quest'applicazione è dimostrata e ha una validità anche nella realtà.
+Per considerare la casistica generale introduciamo la \emph{matrice CKB} che determina le probabilità di decadimento da e verso tutti i quark
+\begin{equation}
+\begin{bmatrix}
+d'\\s'\\b'
+\end{bmatrix}
+=\begin{bmatrix}
+v_{ud}&v_{us}&v_{ub}\\
+v_{cd}&v_{cs}&v_{cb}\\
+v_{td}&v_{ts}&v_{tb}
+\end{bmatrix}
+\begin{bmatrix}
+d\\s\\b
+\end{bmatrix}
+\end{equation}
+dove $d, s, b$ indica i quark $down, strange, bottom$, mentre ogni $v_{ij}$ indica la probabilità di decadimento da un quark $i$ verso un quark $j$ ($u, c, t$ indicano rispettivamente i quark $up, charm, top$).
+ 
+Tutte queste probabilità sono state attualmente trovate sperimentalmente.
+Quindi ogni quark interagisce con una combinazione lineare dei tre quark opposti.
+
+\subsection{Violazioni di simmetria}
+In natura esistono simmetrie continue ma anche simmetrie discrete.
+Queste sono tre:
+\begin{itemize}
+\item \emph{Coniugazione di carica}, si indica con la lettera $C$ e sostituisce ad una particella la propria antiparticella, per esempio all'elettrone $e^-$ sostituisce il positrone $e^+$.
+Ci sono anche particelle che sono la propri stessa antiparticella, per esempio il fotone, che non ha carica è esso stesso la sua antiparticella.
+
+L'elettromagnetismo, la gravità e la forza forte sono simmetriche per $C$.
+Un'operazione di simmetria è un cambiamento, una rotazione. 
+In questo caso noi abbiamo una rotazione in uno spazio funzionale.
+Un oggetto è simmetrico rispetto ad un'operazione di simmetria se dopo la rotazione risulta invariato.
+Nel caso quindi delle forze elencate sopra si possono sostituire le particelle con le proprie antiparticelle e l'interazione non cambia, risultano quindi insensibili alle rotazioni di carica.
+
+\item \emph{Parità} che significa inversione delle coordinate spaziali.
+Vuol dire sostituire a 
+\begin{equation}
+\begin{split}
+\vec{r}\to -\vec{r}\\
+\vec{p}\to -\vec{p}\\
+\end{split}
+\end{equation}
+Se io inverto posizione o quantità di moto delle varie particelle ottengo esattamente l'inverso.
+
+Ciò non avviene nel caso del momento angolare 
+\begin{equation}
+\vec{L}\to \vec{L}
+\end{equation}
+Quello però che si può vedere è che anche in questo caso l'elettromagnetismo, la gravità e la forza forte soddisfano alla condizione di simmetria.
+
+\item \emph{Time reversal}, vuol dire sostituire al tempo l'inverso del tempo.
+Anche in questo caso le tre forze maggiori sono insensibili alla variazione.
+Se si inverte il tempo, le leggi che le regolano sono le stesse.
+\end{itemize}
+
+Soffermiamoci ora sulla simmetria di parità perché è importante nella comprensione della forza debole.
+Date le coordinate $x, y, z$, si effettua quindi una sostituzione con le antitetiche.
+\begin{equation}
+P
+\begin{pmatrix}
+x\\y\\z
+\end{pmatrix}
+=
+P
+\begin{pmatrix}
+-x\\-y\\-z
+\end{pmatrix}
+\end{equation}
+La simmetria di Parità afferma quindi che nel caso di trasformazioni di questo tipo le leggi non devono cambiare.
+
+In geometria si sono viste le trasformazioni per rotazione, in fuzione di queste gli oggetti possono essere:
+\begin{itemize}
+\item scalari
+\item vettori
+\end{itemize}
+Uno scalare è invariante per la rotazione mentre il vettore cambia segno.
+Con l'operazione di parità si introducono anche quantità
+\begin{itemize}
+\item pseudo scalari (anch'essi invarianti per rotazione)
+\item vettori polari (per esempio la quantità di moto) si invertono per rotazione, possedendo quindi parità $P=-1$
+\item vettori assiali, con parità $P=+1$, ma si comportano come vettori rispetto alla rotazione
+\end{itemize}
+\'E importante distinguere tra vettori assiali e vettori polari, infatti sono entrambi vettori ma per quanto riguarda l'inversione di parità i comportano in modo diverso.
+
+Introduciamo quindi due casistiche.
+
+I \emph{vettori e scalari normali} sono quelli che si comportano "normalmente" rispetto alla parità.
+
+Un vettore normale applicando la parità subisce la trasformazione
+\begin{equation}
+\begin{split}
+\vec{r}&\to -\vec{r}\\
+\vec{p}=m\vec{\dot{r}}&\to  -m\vec{\dot{r}}=-\vec{p}
+\end{split}
+\end{equation}
+Un vettore normale per parità inverte quindi le proprie coordinate.
+
+Uno scalare normale invece non subisce variazioni rispetto alla parità.
+Si consideri per esempio  la norma 
+\begin{equation}
+r=(\vec{r}\vec{r})^{\frac{1}{2}}\to [(-\vec{r})(-\vec{r})]^{\frac{1}{2}}=(\vec{r}\vec{r})^\frac{1}{2}=r
+\end{equation}
+
+I \emph{pseudo vettori e pseudo scalari} invece sono quelli che rispetto alla parità si comportano in modo anomalo.
+
+Si consideri per esempio il vettore momento angolare
+\begin{equation}
+\vec{L}=\vec{r}\times \vec{p}\to (-\vec{r})\times (-\vec{p})=\vec{r}\times \vec{p}=\vec{L}
+\end{equation}
+In questo caso quindi il momento angolare che è un \emph{vettore assiale} è definito anche \emph{pseudo vettore} perché rispetto alla parità si comporta in modo diverso dai vettori.
+
+\paragraph{Prova sperimentale della violazione di parità}
+Prima dell'interazione debole si dava per scontato che tutte le leggi della fisica rispettassero la parità.
+L'esperimento che rivoluzionò questa concezione fu teorizzato da due fisici cinesi e eseguito da Madame Wu.
+Questo esperimento coinvolgeva l'elicità e si basava semplicemente sul prendere un nucleo di cobalto e orientare gli spin in un certo modo.
+
+In pratica si prende questo nucleo che ha un certo spin, quindi un certo momento magnetico, e lo si pone all'interno di un campo magnetico, in questo modo si ottengono tutti gli spin orientati allo stesso modo.
+Quello che si verificava è che prendendo un atomo di cobalto, orientato secondo il campo magnetico, con un momento magnetico, rotante lungo un piano conosciuto, questa effettuerà decadimento $\beta$; si è visto sperimentalmente che gli elettroni così generati venivano emessi principalmente nella direzione opposta allo spin del cobalto.
+Questo era sufficiente per dire che l'interazione debole viola il principio di parità.
+
+Per capire quello che succede si consideri uno specchio piano, questo ha la proprietà di invertire virtualmente la coordinata spaziale ortogonale ad esso.
+Se si vede l'esperimento appena descritto all'interno di uno specchio ciò che si verifica è che lo specchio inverte solo la coordinata perpendicolare ad esso, per cui gli elettroni andranno in verso opposto, si ha però che il momento angolare magnetico rimane invariato.
+Quello che però si vede nello specchio è solamente virtuale e quindi non esiste!
+Questo basta a determinare la violazione della parità infatti se così non fosse non dovrebbe esserci una direzione privilegiata ma le particelle dovrebbero essere emesse isotropicamente.
+\begin{figure}[h]
+\centering
+\includegraphics[width=180pt]{fig9_20}
+\caption{Violazione di parità}
+\end{figure}
+
+\paragraph{Esperimento di Goldhaber}
+
+I neutrini hanno una caratteristica importante per quanto riguarda la loro elicità.
+Ricordo che quando abbiamo definito l'elicità abbiamo menzionato anche la chiralità.
+Queste due grandezze pur rappresentando la stessa grandezza hanno una differenza sostanziale ovvero se una particella non si muove alla velocità della luce abbiamo visto che si può definire l'elicità, che avrà valore positivo o negativo in base al punto di osservazione, se però prendiamo in considerazione la particella alla velocità della luce l'elicità diventa chiralità e questa è un invariante caratteristica della particella.
+Il concetto di base rimane comunque lo stesso.
+
+L'esperimento di \emph{Goldhaber} ha avuto come scopo la misura dell'elicità del neutrino e sarà anche l'esperimento che ci aiuterà a capire come mai l'emissione del cobalto avvenga in una direzione preferenziale.
+Il problema per misurare l'elicità del neutrino è il fatto che questo è una particella estremamente elusiva, il che comporta una difficoltà in una qualsiasi misura.
+Bisogna quindi trovare un sistema diverso per effettuare la misura.
+L'esperimento utilizzava la cattura elettronica su un nucleo di Europio $^{152}Eu$.
+L'Europio presenta un momento angolare nullo nello stato utilizzato.
+Questo inoltre faceva cattura elettronica, per cui il nucleo acquisiva un elettrone provocando il decadimento di un protone in un neutrone con l'emissione di un neutrino.
+Il decadimento che avviene è del tipo
+\begin{equation}
+^{152}Eu+e^-\to ^{152}Sm^*+\nu +950keV
+\end{equation}
+Essendo poi il samario in un stato eccitato questo decade ulteriormente nello stato fondamentale con l'emissione di un fotone
+\begin{equation}
+^{152}Sm^*\to ^{152}Sm+\gamma+961keV
+\end{equation}
+L'unica diagnostica che si ha è l'emissione del raggio gamma, il concetto di base è dunque quello di riuscire a relazionare questi fotoni emessi con il neutrino.
+
+Questo esperimento è piuttosto complesso e si divide in tre punti concettuali.
+\begin{enumerate}
+\item Correlazione tra l'elicità del fotone $\gamma$ emesso e del $\nu$.
+Per fare ciò si sfrutterà la conservazione del momento angolare.
+\item Correlazione tra la quantità di moto del $\gamma$ e del $\nu$.
+Si sfrutteranno qui i concetti del rinculo del nucleo e dell'assorbimento risonante.
+\item Misura dell'elicità del $\gamma$, tramite l'interazione con un bersaglio di ferro.
+\end{enumerate}
+
+Abbiamo visto sopra il processo di decadimento interessato, ciò che ora ci interessa è il momento angolare ottenuto dopo la cattura elettronica, partiamo infatti da un momento nullo.
+L'elettrone assorbito porta con sé momento angolare $+1/2$ oppure $-1/2$, quindi all'atto della cattura elettronica ci ritroveremo con momento angolare corrispondente a quello elettronico.
+Si ha poi che il samario si trova in uno stato eccitato con momento angolare $\pm 1$, questo comporta al fatto che il neutrino dovrà avere spin $-1/2$ nel caso di spin $+1$ del samario e $+1/2$ nel caso di spin $-1$ del samario.
+Se si considera ora il decadimento allo stato fondamentale del samario, questo tornerà ad avere spin $0$ quindi per conservazione del momento angolare lo spin del samario sarà portato dal fotone emesso.
+Si ottiene così una correlazione diretta tra lo spin del neutrino e lo spine del fotone.
+\'E stato trovato il punto $1$.
+ 
+Passando al punto $2$ si consideri il sistema di rivelazione.
+Il materiale usato come rivelatore è samario formato da nuclei dello stesso tipo del samario di decadimento.
+Dal processo di decadimento $\gamma$ è noto che per avere riassorbimento del fotone con un decadimento a due corpi è necessario
+che le due emissioni abbiano stessa direzione e verso opposto.
+Sarà quindi possibile rivelare solamente i fotoni che avranno neutrini emessi in direzione opposta. 
+Ho così congelato l'elicità del neutrino perché misurando il fotone misuro la proiezione della quantità di moto sullo spin, perché solo il fotone posto back to back può esseere riassorbito da un altro atomo di samario.
+Il gamma ha un'energia tale da portare il nucleo fuori risonanza.
+\'E stato trovato anche il punto $2$.
+
+Resta ora da capire solamente come misurare l'elicità del fotone.
+Per fare ciò si fa interagire il fotone con un nucleo di ferro, questo interagisce con una sezione d'urto che è maggiore se gli spin di particella e nucleo sono perpendicolari rispetto a paralleli.
+\begin{equation}
+\frac{d\sigma}{d\Omega}(\uparrow\downarrow)>\frac{d\sigma}{d\Omega}(\uparrow\uparrow)
+\end{equation}
+Quindi applicando un campo magnetico si orientano gli spin del ferro in un certo modo e si avrà un certo tipo di assorbimento, poi è possibile invertire il campo generando quindi un inversione dello spin del ferro, vedendo quindi con che spin i fotoni vengono assorbiti maggiormente posso capire qual'è l'elicità dei fotoni emessi e di conseguenza anche di neutrini.
+
+La scoperta fatta fu che l'elicità del fotone era pari a 
+\[
+H(\gamma)=-1,0\pm 0,3
+\]
+Il che vuol dire che i neutrini che interagiscono per interazione debole sono sinistrorsi ($LH$ left-handed), e questo è un concetto che viola chiaramente la parità.
+A volte questo tipo di affermazione viene esagerata infatti ciò non deve indurre a pensare che tutti i neutrini siano sinistrorsi, ma piuttosto che i neutrini che interagiscono per interazione debole lo siano (lo stesso discorso può essere fatto per gli antineutrini che non sono necessariamente tutti destrorsi).
+
+Più in generale si può dire che l'interazione debole interagisce solo con la parte sinistrorsa delle particelle e destra delle antiparticelle, per esempio anche l'interazione debole tra quark agisce allo stesso modo pur essendo particelle che avendo massa possiedono parte sia destrorsa che sinistrorsa.
+Questo genera un problema infatti quelli che riusciamo a rivelare sono esclusivamente neutrini sinistrorsi e antineutrini destrorsi in quanto queste particelle interagiscono esclusivamente debolmente.
+Per questo motivo i neutrini destrorsi, se esistono, vengono chiamati sterili.
+L'interazione debole per conseguenza diretta viola anche la simmetria di carica perché sostituendo un neutrino sinistrorso con la sua antiparticella, questa dovrebbe essere un antineutrino sinistrorso ma l'interazione debole interagisce esclusivamente con i neutrini destrorsi.
+La violazione di questo tipo viene detta violazione massimale in quanto non vi è alcuna interazione con queste particelle.
+
+\paragraph{Simmetria combinata di carica $C$ e parità $P$}
+Prendendo un neutrino sinistrorso, facendo la simmetria di parità si dovrebbe ottenere un neutrino destrorso che però non interagisce debolmente.
+\begin{equation}
+\nu_L\longrightarrow \nu_R
+\end{equation}
+Facendo poi la simmetria di carica ciò che bisognerebbe ottenere è
+\begin{equation}
+\nu_L\longrightarrow \bar{\nu_L}
+\end{equation}
+che anche questa volta non può interagire.
+
+Applicando però entrambe le simmetrie si ottiene 
+\begin{equation}
+\nu_L\longrightarrow \bar{\nu_R}
+\end{equation}
+che è l'altra particella che interagisce per interazione debole.
+Si ha quindi che l'interazione debole viola massimamente le simmetrie di carica e di parità però conserva la combinazione delle due simmetrie.
+
+\'E stato effettuato un esperimento sui Kaoni $K$ in cui si è testata questa proprietà combinata.
+Queste particelle hanno una componente strange e inoltre $K_0$ è una particella che è l'antiparticella di sé stessa.
+Si sono studiato i decadimenti di questa particella, in particolare c'è una particella che si chiama $K_{short}$ e una che si chiama $K_{long}$.
+Se la simmetria di $CP$ fosse stata mantenuta queste particelle avrebbero dovuto avere valore di $CP$ pari a $+1$, in realtà si è visto che in alcuni tipi di decadimenti questa simmetria è violata, quindi l'interazione debole viola anche la simmetria combinata di $CP$.
+
+Si ha inoltre che se la simmetria di $CP$ è violata ma la simmetria di $CPT$ no, ci sarà per forza anche una violazione dell'inversione temporale $T$.
+Ci sono quindi molti studi che si stanno concentrando su questo tipo di violazione combinata.
+Questo interesse è dovuto anche al fatto che manca ancora una spiegazione alla disparità tra materia e antimateria, o meglio si hanno delle spiegazioni ma insufficienti ad evidenziare una disparità così grande, ci sono 8 ordini di grandezza inspiegati.
