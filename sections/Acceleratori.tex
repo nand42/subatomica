@@ -332,27 +332,28 @@ La prima legge che ci è utile è la legge di Faraday-Lenz
 \begin{equation}
 \frac{d\Phi (B)}{dt}=-\oint \vec{E} d\vec{l}
 \end{equation}
-Il flusso è dato da
+Sfruttando la legge di Faraday-Lenz è possibile trovare il campo elettrico corrispondente al flusso magnetico
 \begin{equation}
-\Phi(B) =\pi r^2\frac{d\bar{B}dt}{-E2\pi r}\to E=-\frac{r}{2}\frac{d\bar{B}}{dt}
+\pi R^2\frac{d\bar{B}}{dt}=-E2\pi R \to E=-\frac{R}{2}\frac{d\bar{B}}{dt}
 \end{equation}
-La forza accelerante vista dalle particelle è del tipo 
+dove $R$ è il raggio totale della ciambella.
+La forza che accelera le particelle corrisponde quindi a 
 \begin{equation}
-F=-lE=\frac{er}{2}\frac{d\bar{B}}{dt}
+F=-eE=\frac{eR}{2}\frac{d\bar{B}}{dt}
 \end{equation}
-Al tempo stesso il campo $B_0$ deve fornire l'accelerazione centripeta, per tenere all'interno le particelle.
+Allo stesso tempo il campo $B_0$ deve fornire l'accelerazione centripeta per tenere le particelle all'interno della cavità.
 \begin{equation}
-evB_0=\frac{mv^2}{r}\to \frac{pv}{r}evB_0\to p=erB_0
+evB_0=\frac{mv^2}{R}\to \frac{pv}{R}evB_0\to p=eRB_0
 \end{equation}
-Ricaviamo quindi la forza
+Ricaviamo quindi anche la forza necessaria al campo $B_0$
 \begin{equation}
-F=\frac{dp}{dt}=\frac{d}{dt}(erB_0)=er\frac{dB_0}{dt}
+F=\frac{dp}{dt}=\frac{d}{dt}(erB_0)=eR\frac{dB_0}{dt}
 \end{equation}
-Le due forze devono essere uguali, si ottiene
+Ora per ottenere un moto circolare costante è necessario eguagliare le due forze
 \begin{equation}
-\frac{er}{2}\frac{d\bar{B}}{dt}=er\frac{dB_0}{dt}\to \frac{dB_0}{dt}=\frac{1}{2}\frac{d\bar{B}}{dt}
+\frac{eR}{2}\frac{d\bar{B}}{dt}=eR\frac{dB_0}{dt}\to \frac{dB_0}{dt}=\frac{1}{2}\frac{d\bar{B}}{dt}
 \end{equation}
-Che integrando ci restituisce la condizione
+Integrando si ricava dunque la condizione 
 \begin{equation}
 \bar{B}=2B_0+cost
 \end{equation}
